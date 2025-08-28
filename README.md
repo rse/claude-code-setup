@@ -106,7 +106,7 @@ To setup Claude Code, just follow the following few steps:
 
    > Notice: do not forget to regularily run `sudo claude update` later!
 
-4. [Optional] **SETUP MCP SERVERS**:
+4. [Optional] **SETUP LLM MCP**:
 
    Optionally, and only for the custom `/quorum` and `/llm` commands:
 
@@ -155,7 +155,26 @@ To setup Claude Code, just follow the following few steps:
        -- chat-xai-grok any-chat-completions-mcp
    ```
 
-5. **GET ACCESS TO CLAUDE CODE**:
+5. [Optional] **SETUP GITHUB MCP**:
+
+   Optionally, and only for the custom `/github` command:
+
+   Get a your [Github Private Access Token](https://github.com/settings/personal-access-tokens/new)
+   for API access and store it in an environment variable:
+
+   ```
+   CLAUDE_CODE_KEY_GITHUB="..."
+   ```
+
+   Then add the corresonding MCP server (adds entry to `~/.claude.json`):
+
+   ```sh
+   claude mcp add --scope user --transport http \
+       github https://api.githubcopilot.com/mcp \
+       -H "Authorization: Bearer $CLAUDE_CODE_KEY_GITHUB"
+   ```
+
+6. **GET ACCESS TO CLAUDE CODE**:
 
    Access to Claude Code:Here you have two options:
 

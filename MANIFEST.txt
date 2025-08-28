@@ -21,6 +21,7 @@ FILE .claude/commands/why.md
 FILE .claude/commands/changes.md
 FILE .claude/commands/llm.md
 FILE .claude/commands/quorum.md
+FILE .claude/commands/github.md
 DIR  .config
 DIR  .config/ccstatusline
 FILE .config/ccstatusline/settings.json
