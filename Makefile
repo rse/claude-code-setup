@@ -4,6 +4,10 @@
 ##  Licensed under MIT <https://spdx.org/licenses/MIT>
 ##
 
+none:
+
+import:
+	./setup install
 install:
 	./setup install
 uninstall:
