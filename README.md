@@ -8,8 +8,12 @@ agentic coding support. It ships as a [Node.js](https://nodejs.org)
 based command-line interface, but has built-in integration support for
 both IDEs like [Visual Studio Code](https://code.visualstudio.com/)
 and arbitrary [MCP servers](https://github.com/modelcontextprotocol/servers).
+
 This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s opinionated
-setup for Claude Code. If you disagree, just don't use anything from it.
+setup for Claude Code. If you disagree with any aspect, please just
+don't use anything from it. The main purpose of this repository is to be
+a reference for [Dr. Ralf S. Engelschall](https://engelschall.com) and
+his friends and collegues to setup Clode Code.
 
 Setup
 -----
