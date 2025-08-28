@@ -10,7 +10,6 @@ DIR  .claude
 FILE .claude/settings.json
 DIR  .claude/agents
 FILE .claude/agents/llm.md
-FILE .claude/agents/typescript.md
 FILE .claude/prompt.md
 DIR  .claude/commands
 FILE .claude/commands/explain.md
