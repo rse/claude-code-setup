@@ -2,10 +2,11 @@
 Claude Code Setup
 =================
 
-The [Claude Code](https://www.anthropic.com/claude-code) is a really
+[Claude Code](https://www.anthropic.com/claude-code) is a really
 awesome and extremely versatile generative AI based tool for
-agentic coding support. It ships as a Node.js based command-line interface,
-but has built-in integration support for both IDEs like [Visual Studio Code](https://code.visualstudio.com/)
+agentic coding support. It ships as a [Node.js](https://nodejs.org)
+based command-line interface, but has built-in integration support for
+both IDEs like [Visual Studio Code](https://code.visualstudio.com/)
 and arbitrary [MCP servers](https://github.com/modelcontextprotocol/servers).
 This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s opinionated
 setup for Claude Code. If you disagree, just don't use anything from it.
@@ -124,4 +125,10 @@ Setup
    $ claude
    /login
    ```
+
+Copyright & License
+-------------------
+
+Copyright &copy; 2025 [Dr. Ralf S. Engelschall](mailto:rse@engelschall.com)<br/>
+Licensed under [MIT](https://spdx.org/licenses/MIT)
 
