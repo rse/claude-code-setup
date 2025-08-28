@@ -15,6 +15,58 @@ don't use anything from it. The main purpose of this repository is to be
 a reference for [Dr. Ralf S. Engelschall](https://engelschall.com) and
 his friends and collegues to setup Clode Code.
 
+Features
+--------
+
+This particular Claude Code setup has the following features,
+essential at least to [Dr. Ralf S. Engelschall](https://engelschall.com):
+
+- The `claude update` command allows update a convenient update of the
+  installation, because companion tools have to be also updated and the
+  `claude` tool has to be re-tweaked/re-patched after every update.
+
+- The `claude` command now always picks up user and non-project specific
+  system prompt from `~/claude/prompt.md`, because certain instructions
+  are always reasonable to give.
+
+- The `claude` command now always picks up and assembles non-standard
+  context files `etc/claude.md` from projects into `~/.claude/CLAUDE.md`,
+  as the default of `CLAUDE.md` (in a project top-level) clutters
+  projects.
+
+- The MCP servers, the `LLM` agent and `/llm` command allows convenient
+  access to foreign LLMs like OpenAI ChatGPT, Google Gemini, DeepSeek, and
+  xAI Grok.
+
+- The following custom commands provide standard reusable functionalties:
+
+  - [changes](.claude/commands/changes.md): 
+    Complete *ChangeLog* entries based on Git commit messages.
+
+  - [craft](.claude/commands/craft.md): 
+    Craft new source code.
+
+  - [explain](.claude/commands/explain.md): 
+    Explain existing source code.
+
+  - [lint](.claude/commands/lint.md): 
+    Lint (analyze) existing source code.
+
+  - [nope](.claude/commands/nope.md): 
+    Reject a proposed code change and continue processing.
+
+  - [hint](.claude/commands/hint.md): 
+    Give essential hints on certainly questions.
+
+  - [llm](.claude/commands/llm.md): 
+    Query foreign Large Language Model (LLM).
+
+  - [quorum](.claude/commands/quorum.md): 
+    Query multiple foreign Large Language Model (LLM) for a quorum answer.
+
+  - [why](.claude/commands/why.md): 
+    Use the "Five-Why" method to analyize the root-cause of a problem.
+
 Setup
 -----
 
@@ -36,12 +88,6 @@ Setup
    This installs the `claude` wrapper script into `<prefix>/bin/claude`
    and the configuration files into `<prefix>/.claude/`.
 
-   > Notice: the `claude` wrapper script serves four purposes:
-   > - provide "install" and "update" commands for convenience reasons.
-   > - pick up and assemble non-standard context files from projects.
-   > - pick up user and non-project specific system prompt extension.
-   > - pick up user and non-project specific environment variables.
-
 3. **INSTALL CLAUDE CODE**:
 
    Install [Claude Code](https://www.anthropic.com/claude-code) and
@@ -58,7 +104,7 @@ Setup
 
 4. [Optional] **SETUP MCP SERVERS**:
 
-   Optionally, and only for the custom `/quorum` command:
+   Optionally, and only for the custom `/quorum` and `/llm` commands:
 
    Get API access keys for:
 
