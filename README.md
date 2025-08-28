@@ -15,6 +15,13 @@ don't use anything from it. The main purpose of this repository is to be
 a reference for [Dr. Ralf S. Engelschall](https://engelschall.com) and
 his friends and collegues to setup Clode Code.
 
+Sneak Preview
+-------------
+
+A simple sneak preview of some of the features:
+
+![Demo Screencast](demo.gif)
+
 Features
 --------
 
@@ -66,8 +73,6 @@ essential at least to [Dr. Ralf S. Engelschall](https://engelschall.com):
 
   - [why](.claude/commands/why.md): 
     Use the "Five-Why" method to analyize the root-cause of a problem.
-
-![Demo Screencast](demo.gif)
 
 Setup
 -----
