@@ -1,4 +1,6 @@
 
+<img src="https://raw.githubusercontent.com/rse/claude-code-setup/master/etc/logo.svg" width="400" align="right" alt=""/>
+
 Claude Code Setup
 =================
 
