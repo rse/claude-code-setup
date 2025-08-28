@@ -36,12 +36,11 @@ Setup
    This installs the `claude` wrapper script into `<prefix>/bin/claude`
    and the configuration files into `<prefix>/.claude/`.
 
-   Notice: the `claude` wrapper script serves four purposes:
-
-   - provide "install" and "update" commands for convenience reasons.
-   - pick up and assemble non-standard context files from projects.
-   - pick up user and non-project specific system prompt extension.
-   - pick up user and non-project specific environment variables.
+   > Notice: the `claude` wrapper script serves four purposes:
+   > - provide "install" and "update" commands for convenience reasons.
+   > - pick up and assemble non-standard context files from projects.
+   > - pick up user and non-project specific system prompt extension.
+   > - pick up user and non-project specific environment variables.
 
 3. **INSTALL CLAUDE CODE**:
 
@@ -55,7 +54,7 @@ Setup
    $ sudo claude install
    ```
 
-   Notice: do not forget to regularily run `sudo claude update` later!
+   > Notice: do not forget to regularily run `sudo claude update` later!
 
 4. [Optional] **SETUP MCP SERVERS**:
 
@@ -113,13 +112,13 @@ Setup
    - [Claude Code Free/Pro/Max-5x/Max-20x subscription](https://www.anthropic.com/claude-code#get-started) (recommended)
    - [Anthropic API subscription](https://www.anthropic.com/pricing) (alternatively)
 
-   Notice: the first option provides access to Anthrophic Claude only
-   via Web interfaces and to the API only indirectly via Claude Code, while
-   only the second option also allows direct access to the Anthropic Claude API.
+   > Notice: the first option provides access to Anthrophic Claude only
+   > via Web interfaces and to the API only indirectly via Claude Code, while
+   > only the second option also allows direct access to the Anthropic Claude API.
 
-   Notice: the first option is best for Claude Code because it has less limits
-   and is more cost effective. The second option is more versatile, as you
-   can use this subcription for more than just Claude Code.
+   > Notice: the first option is best for Claude Code because it has less limits
+   > and is more cost effective. The second option is more versatile, as you
+   > can use this subcription for more than just Claude Code.
 
 6. **LOGIN TO CLAUDE CODE**:
 
