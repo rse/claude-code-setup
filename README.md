@@ -23,7 +23,7 @@ Sneak Preview
 
 A simple sneak preview of some of the configured features is:
 
-![Demo Screencast](demo.gif)
+![Demo Screencast](etc/demo.gif)
 
 Features
 --------
