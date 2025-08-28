@@ -79,11 +79,6 @@ case "$1" in
             rm -f "$HOME/.claude/CLAUDE.md"
         fi
 
-        #   read environment variables with credentials
-        if [[ -f "$HOME/.claude/env" ]]; then
-            source "$HOME/.claude/env"
-        fi
-
         #   determine claude(1) command and pass-through execution
         if [ -f "$HOME/.claude/prompt.md" ]; then
             prompt=`cat "$HOME/.claude/prompt.md" | sed '/^$/d' | tr '\n' ' '`
