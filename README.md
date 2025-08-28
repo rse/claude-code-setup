@@ -67,6 +67,8 @@ essential at least to [Dr. Ralf S. Engelschall](https://engelschall.com):
   - [why](.claude/commands/why.md): 
     Use the "Five-Why" method to analyize the root-cause of a problem.
 
+![Demo Screencast](demo.gif)
+
 Setup
 -----
 
