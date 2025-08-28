@@ -12,23 +12,23 @@ both IDEs like [Visual Studio Code](https://code.visualstudio.com/)
 and arbitrary [MCP servers](https://github.com/modelcontextprotocol/servers).
 
 This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s opinionated
-setup for Claude Code. If you disagree with any aspect, please just
-don't use anything from it. The main purpose of this repository is to be
-a reference for [Dr. Ralf S. Engelschall](https://engelschall.com) and
-his friends and collegues to setup Clode Code.
+setup for Claude Code. If you disagree on any aspect, please just
+don't use it. The main purpose of this repository is to help
+[Dr. Ralf S. Engelschall](https://engelschall.com) and
+his friends and colleagues to quickly setup Claude Code in the same
+configuration on multiple computers.
 
 Sneak Preview
 -------------
 
-A simple sneak preview of some of the features:
+A simple sneak preview of some of the configured features is:
 
 ![Demo Screencast](demo.gif)
 
 Features
 --------
 
-This particular Claude Code setup has the following features,
-essential at least to [Dr. Ralf S. Engelschall](https://engelschall.com):
+This particular Claude Code setup has the following features:
 
 - The `claude update` command allows update a convenient update of the
   installation, because companion tools have to be also updated and the
@@ -47,7 +47,8 @@ essential at least to [Dr. Ralf S. Engelschall](https://engelschall.com):
   access to foreign LLMs like OpenAI ChatGPT, Google Gemini, DeepSeek, and
   xAI Grok.
 
-- The following custom commands provide standard reusable functionalties:
+- The following custom commands provide standard reusable functionalties,
+  and are the heart of this Claude Code setup:
 
   - [changes](.claude/commands/changes.md): 
     Complete *ChangeLog* entries based on Git commit messages.
@@ -78,6 +79,8 @@ essential at least to [Dr. Ralf S. Engelschall](https://engelschall.com):
 
 Setup
 -----
+
+To setup Claude Code, just follow the following few steps:
 
 1. **PREREQUISITE**:
 
