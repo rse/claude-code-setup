@@ -52,28 +52,20 @@ This particular Claude Code setup has the following features:
 
   - [changes](.claude/commands/changes.md): 
     Complete *ChangeLog* entries based on Git commit messages.
-
   - [craft](.claude/commands/craft.md): 
     Craft new source code.
-
   - [explain](.claude/commands/explain.md): 
     Explain existing source code.
-
   - [lint](.claude/commands/lint.md): 
     Lint (analyze) existing source code.
-
   - [nope](.claude/commands/nope.md): 
     Reject a proposed code change and continue processing.
-
   - [hint](.claude/commands/hint.md): 
     Give essential hints on certainly questions.
-
   - [llm](.claude/commands/llm.md): 
     Query foreign Large Language Model (LLM).
-
   - [quorum](.claude/commands/quorum.md): 
     Query multiple foreign Large Language Model (LLM) for a quorum answer.
-
   - [why](.claude/commands/why.md): 
     Use the "Five-Why" method to analyize the root-cause of a problem.
 
