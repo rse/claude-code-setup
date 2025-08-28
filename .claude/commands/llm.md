@@ -27,9 +27,9 @@ Follow the following plan:
    and pass the *second and all remaining* words of the following *QUERY*
    as the query for the selected LLM.
 
-3. Return the *plain response* of the `LLM` agent *without any
+3. Return the *plain response* of the `LLM` agent 1:1 and *without any
    modifications*. Especially, do NOT add or remove any text from the agent
-   response on your own.
+   response on your own and do not interpret the result in any way.
 
 QUERY
 -----
