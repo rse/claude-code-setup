@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+##
+##  claude-code-setup - Claude Code Setup Toolkit
+##  Copyright (c) 2025 Dr. Ralf S. Engelschall <rse@engelschall.com>
+##  Licensed under MIT <https://spdx.org/licenses/MIT>
+##
+
+#   determine real claude(1) command
+claude=""
+first=yes
+for p in ${PATH//:/ }; do
+    if [[ -x "$p/claude" ]]; then
+        if [[ $first = yes ]]; then
+            first=no
+            continue
+        else
+            claude="$p/claude"
+            break
+        fi
+    fi
+done
+if [[ $claude = "" ]]; then
+    echo "ERROR: no real claude(1) found in \$PATH" 1>&2
+    exit 1
+fi
+
+#   dispatch according to command arguments
+case "$1" in
+    install )
+        #   install claude(1)
+        echo "++ install Claude Code tool"
+        sudo npm install -y -g \
+            @anthropic-ai/claude-code
+
+        #   install companion tools
+        echo "++ install Claude Code companion tools"
+        sudo npm install -y -g \
+            ccstatusline \
+            tweakcc \
+            @pyroprompts/any-chat-completions-mcp
+        ;;
+
+    update )
+        #   update companion tools
+        echo "++ update Claude Code companion tools"
+        sudo npm update -y -g \
+            ccstatusline \
+            tweakcc \
+            @pyroprompts/any-chat-completions-mcp
+
+        #   update claude(1)
+        echo ""
+        echo "++ update Claude Code tool"
+        sudo "$claude" update
+
+        #   re-tweak/patch afterwards
+        echo ""
+        echo "++ patch Claude Code"
+        sudo tweakcc -a
+        ;;
+
+     * )
+        #   assemble non-standard context files from project
+        context=()
+        dir="$PWD"
+        while [[ $dir != "" ]]; do
+            if [[ $dir = $HOME ]]; then
+                :
+            elif [[ -f "$dir/etc/claude.md" ]]; then
+                context+=("$dir/etc/claude.md")
+            elif [ -f "$dir/.claude/CLAUDE.md" ]; then
+                context+=("$dir/.claude/CLAUDE.md")
+            fi
+            dir=$(dirname "$dir" | sed -e 's;^/$;;')
+        done
+        if [[ ${#context[@]} > 0 ]]; then
+            cat ${context[@]} > "$HOME/.claude/CLAUDE.md"
+        else
+            rm -f "$HOME/.claude/CLAUDE.md"
+        fi
+
+        #   read environment variables with credentials
+        if [[ -f "$HOME/.claude/env" ]]; then
+            source "$HOME/.claude/env"
+        fi
+
+        #   determine claude(1) command and pass-through execution
+        if [ -f "$HOME/.claude/prompt.md" ]; then
+            prompt=`cat "$HOME/.claude/prompt.md" | sed '/^$/d' | tr '\n' ' '`
+            set -- --append-system-prompt "$prompt" "$@"
+        fi
+        set -- "$claude" "$@"
+        exec "$@"
+        ;;
+esac
+

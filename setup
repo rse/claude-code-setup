@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+##
+##  claude-code-setup - Claude Code Setup Toolkit
+##  Copyright (c) 2025 Dr. Ralf S. Engelschall <rse@engelschall.com>
+##  Licensed under MIT <https://spdx.org/licenses/MIT>
+##
+
+#   sanity check usage
+if [[ $1 != "import" && $1 != "install" && $1 != "uninstall" ]]; then
+    echo "USAGE: setup import|install|uninstall [<prefix>]" 1>&2
+    exit 1
+fi
+
+#   determine installation prefix
+prefix="${2-$HOME}"
+
+#   determine base directory
+basedir=""
+case "$0" in
+    /* )
+        #   absolute path
+        basedir=$(dirname "$0")
+        ;;
+    */* )
+        #   relative path
+        basedir=$(dirname "$0")
+        basedir=$(cd "$basedir" && pwd)
+        ;;
+    * )
+        #   no path
+        OIFS="$IFS"; IFS=":"
+        for p in $PATH; do
+            IFS="$OIFS"
+            echo "$p"
+        done
+        IFS="$OIFS"
+        ;;
+esac
+
+#   helper functionf for running a shell command
+run () {
+    echo "\$ $@"
+    eval "$@"
+}
+
+#   dispatch according to command
+case $1 in
+    #   import all files (development only)
+    import )
+        for dir in $(grep -E "^DIR" $basedir/MANIFEST.txt | sed -e 's;^DIR *;;'); do
+            run "mkdir -p $basedir/$dir"
+        done
+        for file in $(grep -E "^FILE" $basedir/MANIFEST.txt | sed -e 's;^FILE *;;'); do
+            run "cp -p $prefix/$file $basedir/$file"
+        done
+        ;;
+
+    #   install all files (production)
+    install )
+        for dir in $(grep -E "^DIR" $basedir/MANIFEST.txt | sed -e 's;^DIR *;;'); do
+            run "mkdir -p $prefix/$dir"
+        done
+        for file in $(grep -E "^FILE" $basedir/MANIFEST.txt | sed -e 's;^FILE *;;'); do
+            run "cp -p $basedir/$file $prefix/$file"
+        done
+        ;;
+
+    #   uninstall all files (production)
+    uninstall )
+        for file in $(grep -E "^FILE" $basedir/MANIFEST.txt | sed -e 's;^FILE *;;'); do
+            run "rm -f $prefix/$file"
+        done
+        for dir in $(grep -E "^DIR" $basedir/MANIFEST.txt | sed -e 's;^DIR *;;'); do
+            run "rmdir $prefix/$dir"
+        done
+        ;;
+esac
+

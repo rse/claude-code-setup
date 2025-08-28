@@ -1,0 +1,30 @@
+##
+##  claude-code-setup - Claude Code Setup Toolkit
+##  Copyright (c) 2025 Dr. Ralf S. Engelschall <rse@engelschall.com>
+##  Licensed under MIT <https://spdx.org/licenses/MIT>
+##
+
+DIR  bin
+FILE bin/claude
+DIR  .claude
+FILE .claude/settings.json
+DIR  .claude/agents
+FILE .claude/agents/llm.md
+FILE .claude/agents/typescript.md
+FILE .claude/prompt.md
+DIR  .claude/commands
+FILE .claude/commands/explain.md
+FILE .claude/commands/lint.md
+FILE .claude/commands/hint.md
+FILE .claude/commands/nope.md
+FILE .claude/commands/craft.md
+FILE .claude/commands/why.md
+FILE .claude/commands/changes.md
+FILE .claude/commands/llm.md
+FILE .claude/commands/quorum.md
+DIR  .config
+DIR  .config/ccstatusline
+FILE .config/ccstatusline/settings.json
+DIR  .tweakcc
+FILE .tweakcc/config.json
+
