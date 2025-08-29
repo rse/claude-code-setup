@@ -57,25 +57,25 @@ This particular Claude Code setup has the following features:
 - The following custom commands provide standard reusable functionalties,
   and are the heart of this Claude Code setup:
 
-  - [changes](.claude/commands/changes.md): 
+  - [changes](.claude/commands/changes.md):
     Complete *ChangeLog* entries based on Git commit messages.
-  - [craft](.claude/commands/craft.md): 
+  - [craft](.claude/commands/craft.md):
     Craft new source code.
-  - [explain](.claude/commands/explain.md): 
+  - [explain](.claude/commands/explain.md):
     Explain existing source code.
-  - [lint](.claude/commands/lint.md): 
+  - [lint](.claude/commands/lint.md):
     Lint (analyze) existing source code.
-  - [nope](.claude/commands/nope.md): 
+  - [nope](.claude/commands/nope.md):
     Reject a proposed code change and continue processing.
-  - [hint](.claude/commands/hint.md): 
+  - [hint](.claude/commands/hint.md):
     Give essential hints on certainly questions.
-  - [llm](.claude/commands/llm.md): 
+  - [llm](.claude/commands/llm.md):
     Query foreign Large Language Model (LLM).
-  - [quorum](.claude/commands/quorum.md): 
+  - [quorum](.claude/commands/quorum.md):
     Query multiple foreign Large Language Model (LLM) for a quorum answer.
-  - [why](.claude/commands/why.md): 
+  - [why](.claude/commands/why.md):
     Use the "Five-Why" method to analyize the root-cause of a problem.
-  - [ref](.claude/commands/ref.md): 
+  - [ref](.claude/commands/ref.md):
     Use the Ref MCP server to read Web information into context.
 
 Setup
@@ -85,13 +85,13 @@ To setup Claude Code, just follow the following few steps:
 
 1. **PREREQUISITE**:
 
-   Install [Node.js](https://nodejs.org) globally into your system 
+   Install [Node.js](https://nodejs.org) globally into your system
    and ensure that the `node`, `npm` and `npx` commands are in your `$PATH`.
 
 2. **INSTALL SCRIPT AND CONFIG**:
 
    Install the content of this repository into your home directory:
-  
+
    ```sh
    $ git clone https://github.com/rse/claude-code-setup
    $ cd claude-code-setup
