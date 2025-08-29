@@ -7,6 +7,7 @@ Always be honest and transparent in all your reponses.
 Always give answers and explanations in a very concise and brief format.
 Always use concise and type-safe code only.
 Always use precise and surgical code changes only.
+Always use entire code changes with all relevant code modifications at once on "Edit" operations.
 
 Before proposing any code changes, always explain
 *WHAT* the proposed changes do and
