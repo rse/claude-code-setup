@@ -10,12 +10,12 @@ PLAN
 
 Follow the following plan:
 
-1. Locate and read existing `CHANGELOG.md` file.
-2. Read corresponding Git commit log messages.
-3. Complete *ChangeLog* entries.
-4. Consolidate *ChangeLog* entries.
-5. Sort *ChangeLog* entries.
-6. Write modified *ChangeLog* entries to `CHANGELOG.md` file.
+1. [ ] Locate and read existing `CHANGELOG.md` file.
+2. [ ] Read corresponding Git commit log messages.
+3. [ ] Complete *ChangeLog* entries.
+4. [ ] Consolidate *ChangeLog* entries.
+5. [ ] Sort *ChangeLog* entries.
+6. [ ] Write modified *ChangeLog* entries to `CHANGELOG.md` file.
 
 EXECUTION
 ---------
