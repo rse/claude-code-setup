@@ -47,6 +47,13 @@ This particular Claude Code setup has the following features:
   access to foreign LLMs like OpenAI ChatGPT, Google Gemini, DeepSeek, and
   xAI Grok.
 
+- The Claude Code status line displays essential LLM and Git information,
+  which are useful during AI assistance sessions.
+
+- The Claude Code colors follow the usual discreet blue/brown color scheme of
+  [Dr. Ralf S. Engelschall](https://engelschall.com), as the default coloring
+  is too colorful.
+
 - The following custom commands provide standard reusable functionalties,
   and are the heart of this Claude Code setup:
 
