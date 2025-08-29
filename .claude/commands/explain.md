@@ -13,9 +13,9 @@ emphasize important keywords in the text paragraphs:
 
 Explanation of: **$ARGUMENTS**
 
-**WHAT**: [...]
+&#x25CB; **WHAT**: [...]
 
-**WHY**:  [...]
+&#x25CB; **WHY**:  [...]
 
-**CRUX**: [...]
+&#x25CB; **CRUX**: [...]
 
