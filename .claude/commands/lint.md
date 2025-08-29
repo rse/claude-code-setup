@@ -18,8 +18,8 @@ Closely follow the following plan of distinct aspects:
 7.  [ ] **A7 - CONCURRENCY**:    Check for concurrency or parallelism race conditions.
 8.  [ ] **A8 - PERFORMANCE**:    Check for performance issues.
 9.  [ ] **A9 - SECURITY**:       Check for security issues.
-10. [ ] **A10 - LOGIC**:         Check for domain logic and runtime processing issues.
-11. [ ] **A11 - ARCHITECTURE**:  Check for architecture concerns and design pattern improvements.
+10. [ ] **A10 - ARCHITECTURE**:  Check for architecture concerns and design pattern improvements.
+11. [ ] **A11 - LOGIC**:         Check for domain logic and runtime processing issues.
 
 Procedure
 ---------
@@ -29,9 +29,15 @@ Try to **fix each potential problem** by proposing a corresponding **code change
 Keep all code changes as **surgical and small** as possible.
 
 Before each code change proposal, provide a **brief explanation**
-**WHAT** the problem is and **HOW** the proposed change fixes it.
-Use the template `**WHAT**: [...]\n**HOW**: [...]` for your output
-and emphasize important keywords in your explanation texts.
+what the problem is and how the proposed solution fixes it.
+Emphasize important keywords in your explanation texts and
+use the following template for your output:
+
+```
+&#x1F7E0; **PROBLEM**: [...]
+
+&#x1F535; **SOLUTION**: [...]
+```
 
 Prohibitions
 ------------
@@ -44,12 +50,15 @@ Do not remove any whitespaces in the code formatting.
 Commandments
 ------------
 
-Always be very pendantic on style.
-Always use concise and type-safe code.
-Always use precise and surgical code changes.
+Always be very *pendantic* on style.
+Always use *concise* and *type-safe* code.
+Always use *precise* and *surgical* code changes.
+Always propose *complete changes* for a single problem.
+
 Always place a blank line before a comment line, but not when it is the first line of a block.
 Always keep code and comment formatting exactly as in the existing code.
 Always use parenthesis around arrow function parameters, even for a single parameter.
 Always make a line break before the keywords "else", "catch", and "finally".
 Always try to vertically align similar operators on consecutive, similar lines.
+Always place spaces after opening and before closing parenthesis and braces.
 

@@ -2,6 +2,8 @@
 description: Reject Change and Continue (during Lint Code process)
 ---
 
-No, I **reject** your proposed code change. $ARGUMENTS.
-Please **continue** your plan without changing the code.
+I **reject** your last proposed code change. $ARGUMENTS.
+Do **NOT apply** your last code change to the code.
+But please **continue** your plan without the next step
+and **continue** to propose further code changes.
 
