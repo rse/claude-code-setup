@@ -75,6 +75,8 @@ This particular Claude Code setup has the following features:
     Query multiple foreign Large Language Model (LLM) for a quorum answer.
   - [why](.claude/commands/why.md): 
     Use the "Five-Why" method to analyize the root-cause of a problem.
+  - [ref](.claude/commands/ref.md): 
+    Use the Ref MCP server to read Web information into context.
 
 Setup
 -----
@@ -181,7 +183,25 @@ To setup Claude Code, just follow the following few steps:
        -H "Authorization: Bearer $CLAUDE_CODE_KEY_GITHUB"
    ```
 
-6. **GET ACCESS TO CLAUDE CODE**:
+6. [Optional] **SETUP REF MCP**:
+
+   Optionally, and only for the custom `/ref` command:
+
+   Get a your [Ref](https://ref.tools) account for API access
+   and store it in an environment variable:
+
+   ```
+   CLAUDE_CODE_KEY_REF="..."
+   ```
+
+   Then add the corresonding MCP server (adds entry to `~/.claude.json`):
+
+   ```sh
+   claude mcp add --scope user --transport http \
+       -- ref "https://api.ref.tools/mcp?apiKey=$CLAUDE_CODE_KEY_REF"
+   ```
+
+7. **GET ACCESS TO CLAUDE CODE**:
 
    Access to Claude Code:Here you have two options:
 
@@ -196,7 +216,7 @@ To setup Claude Code, just follow the following few steps:
    > and is more cost effective. The second option is more versatile, as you
    > can use this subcription for more than just Claude Code.
 
-6. **LOGIN TO CLAUDE CODE**:
+8. **LOGIN TO CLAUDE CODE**:
 
    Login to [Claude Code](https://www.anthropic.com/claude-code):
 
