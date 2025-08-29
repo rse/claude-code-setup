@@ -65,29 +65,29 @@ of yourself and each of the MCP servers, based on the following output template:
 **QUESTION**:
 $ARGUMENTS
 
-**CONSENSUS ANSWER**:
+&#x25CF; **CONSENSUS ANSWER**:
 - [...]
 - [...]
 
 **CONSENSUS RATE**: [...]
 
-**Anthropic Claude**:
+&#x25CB; **Anthropic Claude**:
 - [...]
 - [...]
 
-**OpenAI ChatGPT**:
+&#x25CB; **OpenAI ChatGPT**:
 - [...]
 - [...]
 
-**Google Gemini**:
+&#x25CB; **Google Gemini**:
 - [...]
 - [...]
 
-**DeepSeek**:
+&#x25CB; **DeepSeek**:
 - [...]
 - [...]
 
-**xAI Grok**:
+&#x25CB; **xAI Grok**:
 - [...]
 - [...]
 ```
