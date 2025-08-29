@@ -5,6 +5,7 @@
     "permissions": {
         "allow": [
             "Bash(ls:*)",
+            "Bash(date:*)",
             "Bash(git diff:*)",
             "Bash(git log:*)",
             "Bash(git tag:list:*)",
