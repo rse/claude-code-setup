@@ -25,9 +25,13 @@ Procedure
 ---------
 
 Try to **fix each potential problem** by proposing a corresponding **code change**.
+
 Keep all code changes as **surgical and small** as possible.
+
 Before each code change proposal, provide a **brief explanation**
-**WHAT** the problem is and **WHY** the proposed change fixes it.
+**WHAT** the problem is and **HOW** the proposed change fixes it.
+Use the template `**WHAT**: [...]\n**HOW**: [...]` for your output
+and emphasize important keywords in your explanation texts.
 
 Prohibitions
 ------------
@@ -46,5 +50,6 @@ Always use precise and surgical code changes.
 Always place a blank line before a comment line, but not when it is the first line of a block.
 Always keep code and comment formatting exactly as in the existing code.
 Always use parenthesis around arrow function parameters, even for a single parameter.
-Always place a newline before lines with "else", "catch", and "finally".
+Always make a line break before the keywords "else", "catch", and "finally".
+Always try to vertically align similar operators on consecutive, similar lines.
 
