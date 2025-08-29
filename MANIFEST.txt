@@ -22,6 +22,7 @@ FILE .claude/commands/changes.md
 FILE .claude/commands/llm.md
 FILE .claude/commands/quorum.md
 FILE .claude/commands/github.md
+FILE .claude/commands/exa.md
 FILE .claude/commands/ref.md
 DIR  .config
 DIR  .config/ccstatusline

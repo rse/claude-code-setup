@@ -25,7 +25,8 @@
             "mcp__chat-microsoft-phi",
             "mcp__chat-xai-grok",
             "mcp__github",
-            "mcp__ref"
+            "mcp__ref",
+            "mcp__exa"
         ],
         "ask": [
             "Write",

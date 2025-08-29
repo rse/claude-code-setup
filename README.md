@@ -75,6 +75,8 @@ This particular Claude Code setup has the following features:
     Query multiple foreign Large Language Model (LLM) for a quorum answer.
   - [why](.claude/commands/why.md):
     Use the "Five-Why" method to analyize the root-cause of a problem.
+  - [exa](.claude/commands/ref.md):
+    Use the Exa MCP server to search the Web.
   - [ref](.claude/commands/ref.md):
     Use the Ref MCP server to read Web information into context.
 
@@ -183,20 +185,23 @@ To setup Claude Code, just follow the following few steps:
        -H "Authorization: Bearer $CLAUDE_CODE_KEY_GITHUB"
    ```
 
-6. [Optional] **SETUP REF MCP**:
+6. [Optional] **SETUP REF AND EXA MCP**:
 
-   Optionally, and only for the custom `/ref` command:
+   Optionally, and only for the custom `/ref` and `/exa` commands:
 
-   Get a your [Ref](https://ref.tools) account for API access
+   Get a your [Ref](https://ref.tools) and [Exa](https://exa.ai) accounts for API access
    and store it in an environment variable:
 
    ```
    CLAUDE_CODE_KEY_REF="..."
+   CLAUDE_CODE_KEY_EXA="..."
    ```
 
-   Then add the corresonding MCP server (adds entry to `~/.claude.json`):
+   Then add the corresonding MCP servers (adds entry to `~/.claude.json`):
 
    ```sh
+   claude exa add --scope user --transport http \
+       -- ref "https://mcp.exa.ai/mcp?exaApiKey=$CLAUDE_CODE_KEY_EXA"
    claude mcp add --scope user --transport http \
        -- ref "https://api.ref.tools/mcp?apiKey=$CLAUDE_CODE_KEY_REF"
    ```
