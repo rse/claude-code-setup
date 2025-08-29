@@ -39,9 +39,9 @@ This particular Claude Code setup has the following features:
   are always reasonable to give.
 
 - The `claude` command now always picks up and assembles non-standard
-  context files `etc/claude.md` from projects into `~/.claude/CLAUDE.md`,
-  as the default of `CLAUDE.md` (in a project top-level) clutters
-  projects.
+  context files `etc/claude.md` or `.claude/CLAUDE.md` from projects
+  into the central (temporary) `~/.claude/CLAUDE.md`, as the default of
+  `CLAUDE.md` (in a project top-level) clutters projects.
 
 - The MCP servers, the `LLM` agent and `/llm` command allows convenient
   access to foreign LLMs like OpenAI ChatGPT, Google Gemini, DeepSeek, and

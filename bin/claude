@@ -64,12 +64,13 @@ case "$1" in
         context=()
         dir="$PWD"
         while [[ $dir != "" ]]; do
-            if [[ $dir = $HOME ]]; then
-                :
-            elif [[ -f "$dir/etc/claude.md" ]]; then
-                context+=("$dir/etc/claude.md")
-            elif [ -f "$dir/.claude/CLAUDE.md" ]; then
-                context+=("$dir/.claude/CLAUDE.md")
+            if [[ $dir != $HOME ]]; then
+                if [[ -f "$dir/etc/claude.md" ]]; then
+                    context+=("$dir/etc/claude.md")
+                fi
+                if [ -f "$dir/.claude/CLAUDE.md" ]; then
+                    context+=("$dir/.claude/CLAUDE.md")
+                fi
             fi
             dir=$(dirname "$dir" | sed -e 's;^/$;;')
         done
