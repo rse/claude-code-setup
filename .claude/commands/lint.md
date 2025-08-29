@@ -29,9 +29,9 @@ Try to **fix each potential problem** by proposing a corresponding **code change
 Keep all code changes as **surgical and small** as possible.
 
 Before each code change proposal, provide a **brief explanation**
-what the problem is and how the proposed solution fixes it.
+*what* the *problem* is and *how* the proposed *solution* fixes it.
 Emphasize important keywords in your explanation texts and
-use the following template for your output:
+use the following template for those outputs:
 
 ```
 &#x1F7E0; **PROBLEM**: [...]
@@ -46,6 +46,7 @@ Do not factor out code into own functions.
 Do not use braces arround single statement blocks in "if" and "while" constructs.
 Do not insist on early "return" in "if" block if "else" block exists.
 Do not remove any whitespaces in the code formatting.
+Do not show just partial code changes.
 
 Commandments
 ------------
@@ -53,7 +54,7 @@ Commandments
 Always be very *pendantic* on style.
 Always use *concise* and *type-safe* code.
 Always use *precise* and *surgical* code changes.
-Always propose *complete changes* for a single problem.
+Always propose *complete code changes* for every single problem.
 
 Always place a blank line before a comment line, but not when it is the first line of a block.
 Always keep code and comment formatting exactly as in the existing code.
