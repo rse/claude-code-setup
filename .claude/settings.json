@@ -7,7 +7,7 @@
             "Bash(ls:*)",
             "Bash(git diff:*)",
             "Bash(git log:*)",
-            "Bash(git tag:*list*)",
+            "Bash(git tag:list:*)",
             "Bash(npm install)",
             "Bash(npm start lint)",
             "Bash(npm start build)",
