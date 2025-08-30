@@ -67,9 +67,9 @@ with N issues (from which M were resolved) and
 ```
 **SUMMARY**:
 
-&#x1F7E0; **AX - XXX**: N issues (M resolved)
+&#x26AB; **AX - XXX**: N issues (M resolved)
 
-&#x1F535; **AX - XXX**: no issues
+&#x26AA; **AX - XXX**: no issues
 
 [...]
 ```
