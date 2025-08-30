@@ -30,7 +30,18 @@ Procedure
 For each *potential problem* you detect, propose a corresponding
 **complete code change set**. Keep all changes as *surgical and small* as possible.
 
-Before each code change proposal, provide a **brief explanation**
+In case of no code change proposal at all for an entire aspect,
+display this with the following output template, where the
+`**AX - XXX:** (Check for [...])` is a reference to the
+current aspect you analyzed:
+
+```
+**AX - XXX:** Check for [...]
+
+&#x26AB; **RESULT**: No issues found, no changes necessary.
+```
+
+Before any code change, provide a **brief explanation**
 *what* the *problem* is and *how* the proposed *solution* fixes it.
 Emphasize important keywords in your explanation texts and
 use the following template for those outputs, where the
