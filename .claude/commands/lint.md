@@ -57,8 +57,9 @@ current aspect you are analyzing:
 ```
 
 At the end, for giving a summary of all accepted and reject code
-changes, use the following output template, where `&#x1F7E0; **AX -
-XXX**: N issues (M resolved)` is used for aspects with issues and
+changes, use the following output template, where
+`&#x1F7E0; **AX - XXX**: N issues (M resolved)` is used for aspects
+with N issues (from which M were resolved) and
 `&#x1F535; **AX - XXX**: no issues` for aspects without any issues:
 
 ```
@@ -92,6 +93,7 @@ Always propose *entire, complete, and necessary code change sets* for each solut
 
 Always place a blank line before a comment line, but not when it is the first line of a block or an end of line comment.
 Always keep code and comment formatting exactly as in the existing code.
+Always use regular comments `/* ... */` instead of end-of-line comments `//`.
 Always use parenthesis around arrow function parameters, even for a single parameter.
 Always make a line break before the keywords "else", "catch", and "finally".
 Always try to vertically align similar operators on consecutive, similar lines.
