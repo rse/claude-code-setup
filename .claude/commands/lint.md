@@ -62,7 +62,7 @@ XXX**: N issues (M resolved)` is used for aspects with issues and
 `&#x1F535; **AX - XXX**: no issues` for aspects without any issues:
 
 ```
-**SUMMARY***:
+**SUMMARY**:
 
 &#x1F7E0; **AX - XXX**: N issues (M resolved)
 
