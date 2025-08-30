@@ -32,11 +32,11 @@ For each *potential problem* you detect, propose a corresponding
 
 In case of no code change proposal at all for an entire aspect,
 display this with the following output template, where the
-`**AX - XXX:** (Check for [...])` is a reference to the
+`**AX - XXX**: Check for [...]` is a reference to the
 current aspect you analyzed:
 
 ```
-**AX - XXX:** Check for [...]
+**AX - XXX**: Check for [...]
 
 &#x26AA; **RESULT**: No issues found, no changes necessary.
 ```
@@ -45,11 +45,11 @@ Before any code change, provide a **brief explanation**
 *what* the *problem* is and *how* the proposed *solution* fixes it.
 Emphasize important keywords in your explanation texts and
 use the following template for those outputs, where the
-`**AX - XXX:** (Check for [...])` is a reference to the
+`**AX - XXX**: Check for [...]` is a reference to the
 current aspect you are analyzing:
 
 ```
-**AX - XXX:** Check for [...]
+**AX - XXX**: Check for [...]
 
 &#x1F7E0; **PROBLEM**: [...]
 
@@ -58,15 +58,15 @@ current aspect you are analyzing:
 
 At the end, for giving a summary of all accepted and reject code
 changes, use the following output template, where `&#x1F7E0; **AX -
-XXX:** N issues (M resolved)` is used for aspects which issues and
-`&#x1F535; **AX - XXX:** no issues` for aspects without any issues:
+XXX**: N issues (M resolved)` is used for aspects which issues and
+`&#x1F535; **AX - XXX**: no issues` for aspects without any issues:
 
 ```
-**SUMMARY:***
+**SUMMARY***:
 
-&#x1F7E0; **AX - XXX:** N issues (M resolved)
+&#x1F7E0; **AX - XXX**: N issues (M resolved)
 
-&#x1F535; **AX - XXX:** no issues
+&#x1F535; **AX - XXX**: no issues
 
 [...]
 ```
