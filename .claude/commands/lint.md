@@ -54,7 +54,7 @@ Commandments
 Always be very *pendantic* on style.
 Always use *concise* and *type-safe* code.
 Always use *precise* and *surgical* code changes.
-Always propose *entire, complete code changes* for every single problem.
+Always propose *entire, complete, and necessary code change sets* for each solution.
 
 Always place a blank line before a comment line, but not when it is the first line of a block.
 Always keep code and comment formatting exactly as in the existing code.
