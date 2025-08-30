@@ -60,14 +60,14 @@ At the end, do not give any more explanations, except for
 a summary of all accepted and reject code
 changes. For this, according to the original aspect ordering,
 use the following output template, where
-`&#x1F7E0; **AX - XXX**: N issues (M resolved)` is used for aspects
-with N issues (from which M were resolved) and
-`&#x1F535; **AX - XXX**: no issues` for aspects without any issues:
+`&#x1F7E0; **AX - XXX**: N issues` is used for aspects
+with N issues and `&#x1F535; **AX - XXX**: no issues`
+for aspects without any issues:
 
 ```
 **SUMMARY**:
 
-&#x26AB; **AX - XXX**: N issues (M resolved)
+&#x1F7E0; **AX - XXX**: N issues
 
 &#x26AA; **AX - XXX**: no issues
 
