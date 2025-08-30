@@ -71,6 +71,8 @@ XXX**: N issues (M resolved)` is used for aspects which issues and
 [...]
 ```
 
+At the end, beside this summary, do not give any more explanations.
+
 Prohibitions
 ------------
 
