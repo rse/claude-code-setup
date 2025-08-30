@@ -16,6 +16,7 @@ FILE .claude/commands/explain.md
 FILE .claude/commands/lint.md
 FILE .claude/commands/hint.md
 FILE .claude/commands/nope.md
+FILE .claude/commands/reassess.md
 FILE .claude/commands/craft.md
 FILE .claude/commands/why.md
 FILE .claude/commands/changes.md

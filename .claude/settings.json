@@ -1,7 +1,7 @@
 {
     "defaultMode":                  "acceptEdits",
     "disableBypassPermissionsMode": "disable",
-    "verbose":                      true,
+    "verbose":                      false,
     "permissions": {
         "allow": [
             "Bash(ls:*)",
