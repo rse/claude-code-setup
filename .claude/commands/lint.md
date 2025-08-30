@@ -2,7 +2,7 @@
 description: Lint Code
 ---
 
-**Analyze** the code of $ARGUMENTS for **potential problems**.
+*Analyze* the code of $ARGUMENTS for *potential problems*.
 
 Plan
 ----
@@ -27,8 +27,9 @@ in the given chronological order:
 Procedure
 ---------
 
+*Analyze* the code of $ARGUMENTS for *potential problems*.
 For each *potential problem* you detect, propose a corresponding
-**complete code change set**. Keep all changes as *surgical and small* as possible.
+*complete code change set*. Keep all changes as *surgical and small* as possible.
 
 In case of no code change proposal at all for an entire aspect,
 display this with the following output template, where the
@@ -41,7 +42,7 @@ current aspect you analyzed:
 &#x26AA; **RESULT**: No issues found, no changes necessary.
 ```
 
-Before any code change, provide a **brief explanation**
+Before any code change, provide a *brief explanation*
 *what* the *problem* is and *how* the proposed *solution* fixes it.
 Emphasize important keywords in your explanation texts and
 use the following template for those outputs, where the
