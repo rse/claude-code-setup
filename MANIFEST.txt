@@ -16,6 +16,7 @@ FILE .claude/commands/explain.md
 FILE .claude/commands/lint.md
 DIR  .claude/commands/lint
 FILE .claude/commands/lint/nope.md
+FILE .claude/commands/lint/recheck.md
 FILE .claude/commands/lint/reassess.md
 FILE .claude/commands/lint/complete.md
 FILE .claude/commands/lint/explain.md
