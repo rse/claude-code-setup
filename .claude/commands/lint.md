@@ -58,7 +58,7 @@ current aspect you are analyzing:
 
 At the end, for giving a summary of all accepted and reject code
 changes, use the following output template, where `&#x1F7E0; **AX -
-XXX**: N issues (M resolved)` is used for aspects which issues and
+XXX**: N issues (M resolved)` is used for aspects with issues and
 `&#x1F535; **AX - XXX**: no issues` for aspects without any issues:
 
 ```
