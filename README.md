@@ -68,9 +68,11 @@ This particular Claude Code setup has the following features:
       - [complete](.claude/commands/lint/complete.md):
         Force a complete code change set.
       - [explain](.claude/commands/lint/explain.md):
-        Request a better explanation of a chage.
+        Request a better explanation of a change.
+      - [refine](.claude/commands/lint/refine.md):
+        Request a refinement of a change.
       - [reassess](.claude/commands/lint/reassess.md):
-        Request a re-assessment of a chage.
+        Request a re-assessment of a change.
       - [nope](.claude/commands/lint/nope.md):
         Reject a proposed code change and continue processing.
   - [hint](.claude/commands/hint.md):
