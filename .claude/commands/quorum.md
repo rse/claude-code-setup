@@ -1,5 +1,6 @@
 ---
-description: Query Multiple AIs for Quorum Answer
+argument-hint: "[question]"
+description: "Query Multiple AIs for Quorum Answer"
 ---
 
 You are an agent, helping to find a quorum answer on an arbitrary question.

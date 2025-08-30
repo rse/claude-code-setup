@@ -1,4 +1,5 @@
 ---
+argument-hint: ""
 description: "During Lint: Complete Code Change"
 ---
 

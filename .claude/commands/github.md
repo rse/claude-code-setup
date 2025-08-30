@@ -1,4 +1,5 @@
 ---
+argument-hint: "[query]"
 description: "Search Github"
 ---
 

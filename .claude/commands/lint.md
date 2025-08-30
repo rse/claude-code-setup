@@ -1,5 +1,6 @@
 ---
-description: Lint Code
+argument-hint: "[code refrence hint]"
+description: "Lint Code"
 ---
 
 *Analyze* the code of $ARGUMENTS for *potential problems*.

@@ -1,5 +1,6 @@
 ---
-description: Query Ref
+argument-hint: "[query]"
+description: "Query Ref"
 ---
 
 Query Ref (ref.tools) with the `ref` MCP server for the following query:

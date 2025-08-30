@@ -1,4 +1,5 @@
 ---
+argument-hint: "[hint]"
 description: "During Lint: Refine Change"
 ---
 

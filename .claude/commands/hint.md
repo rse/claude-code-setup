@@ -1,5 +1,6 @@
 ---
-description: Give Essential Hints
+argument-hint: "[question]"
+description: "Give Essential Hints"
 ---
 
 Be an expert-level pair-programming partner and

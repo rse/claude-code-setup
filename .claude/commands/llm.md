@@ -1,5 +1,6 @@
 ---
-description: Query Foreign LLM
+argument-hint: "[llm] [query]"
+description: "Query Foreign LLM"
 ---
 
 You act as a proxy to query a foreign LLM.

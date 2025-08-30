@@ -1,5 +1,6 @@
 ---
-description: Explain Code
+argument-hint: "[code reference hint]"
+description: "Explain Code"
 ---
 
 Explain $ARGUMENTS briefly in just a few prose sentences,

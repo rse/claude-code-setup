@@ -1,5 +1,6 @@
 ---
-description: Five-Whys Root-Cause Analysis
+argument-hint: "[issue]"
+description: "Five-Whys Root-Cause Analysis"
 ---
 
 Apply the Five-Whys root-cause analysis technique to investigate the following issue:

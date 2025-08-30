@@ -1,5 +1,6 @@
 ---
-description: ChangeLog Entries
+argument-hint: ""
+description: "ChangeLog Entries"
 ---
 
 You are an assistant, helping to complete, consolidate
