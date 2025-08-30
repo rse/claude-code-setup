@@ -65,8 +65,14 @@ This particular Claude Code setup has the following features:
     Explain existing source code.
   - [lint](.claude/commands/lint.md):
     Lint (analyze) existing source code.
-  - [nope](.claude/commands/nope.md):
-    Reject a proposed code change and continue processing.
+      - [complete](.claude/commands/lint/complete.md):
+        Force a complete code change set.
+      - [explain](.claude/commands/lint/explain.md):
+        Request a better explanation of a chage.
+      - [reassess](.claude/commands/lint/reassess.md):
+        Request a re-assessment of a chage.
+      - [nope](.claude/commands/lint/nope.md):
+        Reject a proposed code change and continue processing.
   - [hint](.claude/commands/hint.md):
     Give essential hints on certainly questions.
   - [llm](.claude/commands/llm.md):
