@@ -66,15 +66,17 @@ This particular Claude Code setup has the following features:
   - [lint](.claude/commands/lint.md):
     Lint (analyze) existing source code.
       - [complete](.claude/commands/lint/complete.md):
-        Force a complete code change set.
+        The change is incomplete: Force a complete code change set at once.
       - [explain](.claude/commands/lint/explain.md):
-        Request a better explanation of a change.
+        The explanation is confusing: Request a better explanation of the change.
+      - [recheck](.claude/commands/lint/recheck.md):
+        The code you have updated in parallel: Request a rechecking of the code.
       - [refine](.claude/commands/lint/refine.md):
-        Request a refinement of a change.
+        The code should be changed: Request a code refinement of a change.
       - [reassess](.claude/commands/lint/reassess.md):
-        Request a re-assessment of a change.
+        The change is onscure: Request a re-assessment of the change.
       - [nope](.claude/commands/lint/nope.md):
-        Reject a proposed code change and continue processing.
+        The change is not acceptable: Reject the code change and continue processing.
   - [hint](.claude/commands/hint.md):
     Give essential hints on certainly questions.
   - [llm](.claude/commands/llm.md):
