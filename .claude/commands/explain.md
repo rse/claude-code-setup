@@ -9,9 +9,10 @@ and then **WHY** it does it (*rationale*).
 Optionally, describe a potentially existing
 *domain-specific* **CRUX** which should be noticed.
 
-Use the following template for the output and
+Use the following <template/> for the output and
 emphasize important keywords in the text paragraphs:
 
+<template>
 Explanation of: **$ARGUMENTS**
 
 &#x25CB; **WHAT**: [...]
@@ -19,4 +20,5 @@ Explanation of: **$ARGUMENTS**
 &#x25CB; **WHY**:  [...]
 
 &#x25CB; **CRUX**: [...]
+</template>
 

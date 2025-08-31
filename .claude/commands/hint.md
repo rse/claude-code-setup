@@ -25,8 +25,9 @@ where further information can be found.
 
 Never propose direct changes to the existing code.
 
-For your answer use the following template:
+For your answer use the following outout <template/>:
 
+<template>
 **REQUEST**:
 $ARGUMENTS
 
@@ -49,4 +50,5 @@ $ARGUMENTS
 - [...]
 - [...]
 - [...]
+</template>
 

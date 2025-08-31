@@ -3,7 +3,7 @@ argument-hint: "[issue]"
 description: "Five-Whys Root-Cause Analysis"
 ---
 
-Apply the Five-Whys root-cause analysis technique to investigate the following issue:
+Apply the *Five-Whys* *root-cause analysis* technique to investigate the following issue:
 
 $ARGUMENTS
 
@@ -11,7 +11,7 @@ For this, iteratively ask "why" to drill down from symptoms to the root-cause.
 This helps to identify the fundamental reason behind a problem rather than just
 addressing surface-level symptoms.
 
-To apply the method, follow the following plan:
+To apply the method, strictly follow the following plan:
 
 1. Start with the problem statement.
 2. Check sources for initial hints on the problem.
@@ -33,7 +33,7 @@ Notice the following points:
 
 Example:
 
-```
+<example>
 **Problem Statement**: Application crashes on startup.
 **WHY 1**: Database connection fails.
 **WHY 2**: Connection string is invalid.
@@ -43,5 +43,5 @@ Example:
 **Root Cause**: Missing deployment documentation.
 **Validation (Working Backwards)**: [...]
 **Proposed Solution**: [...]
-```
+</example>
 

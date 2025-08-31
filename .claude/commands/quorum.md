@@ -21,9 +21,9 @@ Stricly follow the following execution *plan*:
 EXECUTION
 ---------
 
-For yourself (Anthropic Claude), first answer the following *query* in advance:
+For yourself (Anthropic Claude), first answer the following *<query/>* in advance:
 
-```
+<query>
 $ARGUMENTS.
 Please respond with facts and very concise and brief only,
 usually with just 1 to 7 corresponding bullet points and with short sentences.
@@ -31,18 +31,18 @@ Optionally, mention potential cruxes which should be noticed.
 Beside bullet points, do not provide any additional explanations.
 Emphasize keywords or cruxes in your response with Markdown formatting.
 Format code parts with Markdown formatting.
-```
+</query>
 
-Then show your results based on the following template:
+Then show your results based on the following outout <template/>:
 
-```
+<template>
 **Anthropic Claude** (sneak preview in advance):
 - [...]
 - [...]
-```
+</template>
 
 Then, for each of the following foreign AIs and their given corresponding MCP servers,
-use a *sub-task* and the `LLM` *agent* to perform the above same *query* again:
+use a *sub-task* and the `LLM` *agent* to perform the above same *<query/>* again:
 
 - OpenAI ChatGPT: `chat-openai-chatgpt`
 - Google Gemini:  `chat-google-gemini`
@@ -60,9 +60,9 @@ OUTPUT
 ------
 
 Finally show the summary, the consensus and the complete and unmodified responses 
-of yourself and each of the MCP servers, based on the following output template:
+of yourself and each of the MCP servers, based on the following output <template/>:
 
-```
+<template>
 **QUESTION**:
 $ARGUMENTS
 
@@ -91,5 +91,5 @@ $ARGUMENTS
 &#x25CB; **xAI Grok**:
 - [...]
 - [...]
-```
+</template>
 
