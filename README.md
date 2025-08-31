@@ -1,10 +1,10 @@
 
 <img src="https://raw.githubusercontent.com/rse/claude-code-setup/master/etc/logo.svg" width="300" align="right" alt=""/>
 
-Claude Code Setup
+**Claude Code** Setup
 =================
 
-[Claude Code](https://www.anthropic.com/claude-code) is a really
+[**Claude Code**](https://www.anthropic.com/claude-code) is a really
 awesome and extremely versatile generative AI based tool for
 agentic coding support. It ships as a [Node.js](https://nodejs.org)
 based command-line interface, but has built-in integration support for
@@ -13,10 +13,10 @@ and arbitrary [MCP servers](https://github.com/modelcontextprotocol/servers),
 and supports custom commands, hooks and agents for extensibility.
 
 This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s opinionated
-setup for Claude Code. If you disagree on any aspect, please just
+setup for **Claude Code**. If you disagree on any aspect, please just
 don't use it. The main purpose of this repository is to help
 [Dr. Ralf S. Engelschall](https://engelschall.com) and
-his friends and colleagues to quickly setup Claude Code in the same
+his friends and colleagues to quickly setup **Claude Code** in the same
 pre-armed configuration on multiple computers.
 
 Sneak Preview
@@ -29,7 +29,7 @@ A simple sneak preview of some of the configured features is:
 Features
 --------
 
-This particular Claude Code setup has the following features:
+This particular **Claude Code** setup has the following features:
 
 - The `claude update` command allows a convenient update of the
   installation, because companion tools have to be also updated and the
@@ -48,15 +48,15 @@ This particular Claude Code setup has the following features:
   access to foreign LLMs like OpenAI ChatGPT, Google Gemini, DeepSeek, and
   xAI Grok.
 
-- The Claude Code status line displays essential LLM and Git information,
+- The **Claude Code** status line displays essential LLM and Git information,
   which are useful during AI assistance sessions.
 
-- The Claude Code colors follow the usual discreet blue/brown color scheme of
+- The **Claude Code** colors follow the usual discreet blue/brown color scheme of
   [Dr. Ralf S. Engelschall](https://engelschall.com), as the default coloring
   is too colorful.
 
 - The following custom commands provide standard reusable functionalities,
-  and are the heart of this Claude Code setup:
+  and are the heart of this **Claude Code** setup:
 
   - [changes](.claude/commands/changes.md):
     Complete *ChangeLog* entries based on Git commit messages.
@@ -94,7 +94,7 @@ This particular Claude Code setup has the following features:
 Setup
 -----
 
-To setup Claude Code, just follow the following few steps:
+To setup **Claude Code**, just follow the following few steps:
 
 1. **PREREQUISITE**:
 
@@ -116,7 +116,7 @@ To setup Claude Code, just follow the following few steps:
 
 3. **INSTALL CLAUDE CODE**:
 
-   Install [Claude Code](https://www.anthropic.com/claude-code) and
+   Install [**Claude Code**](https://www.anthropic.com/claude-code) and
    the companion tools [TweakCC](https://github.com/Piebald-AI/tweakcc),
    [CCStatusLine](https://github.com/sirmalloc/ccstatusline), and
    [Any-Chat-Completions-MCP](https://github.com/pyroprompts/any-chat-completions-mcp)
@@ -219,22 +219,22 @@ To setup Claude Code, just follow the following few steps:
 
 7. **GET ACCESS TO CLAUDE CODE**:
 
-   Access to Claude Code: Here you have two options:
+   Access to **Claude Code**: Here you have two options:
 
-   - [Claude Code Free/Pro/Max-5x/Max-20x subscription](https://www.anthropic.com/claude-code#get-started) (recommended)
+   - [**Claude Code** Free/Pro/Max-5x/Max-20x subscription](https://www.anthropic.com/claude-code#get-started) (recommended)
    - [Anthropic API subscription](https://www.anthropic.com/pricing) (alternatively)
 
    > Notice: the first option provides access to Anthropic Claude only
-   > via Web interfaces and to the API only indirectly via Claude Code, while
+   > via Web interfaces and to the API only indirectly via **Claude Code**, while
    > only the second option also allows direct access to the Anthropic Claude API.
 
-   > Notice: the first option is best for Claude Code because it has less limits
+   > Notice: the first option is best for **Claude Code** because it has less limits
    > and is more cost effective. The second option is more versatile, as you
-   > can use this subscription for more than just Claude Code.
+   > can use this subscription for more than just **Claude Code**.
 
 8. **LOGIN TO CLAUDE CODE**:
 
-   Login to [Claude Code](https://www.anthropic.com/claude-code):
+   Login to [**Claude Code**](https://www.anthropic.com/claude-code):
 
    ```
    $ claude
