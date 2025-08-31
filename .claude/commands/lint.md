@@ -22,8 +22,8 @@ in the given chronological order:
 9.  **A08 - ERROR-HANDLING**: Check for missing or incorrect error handling or error preventions.
 10. **A09 - MEMORY-LEAK**:    Check for memory leaks.
 11. **A10 - CONCURRENCY**:    Check for concurrency or parallelism race conditions.
-12. **A11 - PERFORMANCE**:    Check for performance issues.
-13. **A12 - SECURITY**:       Check for security issues.
+12. **A11 - PERFORMANCE**:    Check for performance and efficiency issues.
+13. **A12 - SECURITY**:       Check for potential vulnerabilities or security issues.
 14. **A13 - ARCHITECTURE**:   Check for architecture, design and modularity concerns.
 15. **A14 - LOGIC**:          Check for domain logic and runtime processing issues.
 16. **SUMMARY**:              Give a summary of all accepted and rejected code changes.
