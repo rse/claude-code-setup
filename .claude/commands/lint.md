@@ -11,19 +11,22 @@ Plan
 Closely follow the following *plan* of distinct *aspects*,
 in the given chronological order:
 
-1.  **Preparation**:         Find and read all the related source code files.
-2.  **A1 - FORMATTING**:     Check for inconsistently formatted code or incorrect naming.
-3.  **A2 - CLEANESS**:       Check for unclean or inconsistent code.
-4.  **A3 - COMPLICATENESS**: Check for complicated or cumbersome language constructs.
-5.  **A4 - CONCISENESS**:    Check for non-concise or redundant code.
-6.  **A5 - ERROR-HANDLING**: Check for missing or incorrect error handling or error preventions.
-7.  **A6 - MEMORY-LEAK**:    Check for memory leaks.
-8.  **A7 - CONCURRENCY**:    Check for concurrency or parallelism race conditions.
-9.  **A8 - PERFORMANCE**:    Check for performance issues.
-10. **A9 - SECURITY**:       Check for security issues.
-11. **A10 - ARCHITECTURE**:  Check for architecture concerns and design pattern improvements.
-12. **A11 - LOGIC**:         Check for domain logic and runtime processing issues.
-13. **Summary**:             Give a summary of all accepted and rejected code changes.
+1.  **PREPARATION**:          Find and read all the related source code files.
+2.  **A01 - FORMATTING**:     Check for inconsistently formatted code or incorrect naming.
+3.  **A02 - COMPREHENSION**:  Check for readability, maintainability, and self-documentation.
+4.  **A03 - CLEANESS**:       Check for unclean or inconsistent code.
+5.  **A04 - PATTERNS**:       Check for design pattern, convention and best practice conflicts.
+6.  **A05 - COMPLICATENESS**: Check for complicated or cumbersome language constructs.
+7.  **A06 - CONCISENESS**:    Check for non-concise or redundant code.
+8.  **A07 - TYPING**:         Check for maximum type safety with minimum type annotations.
+9.  **A08 - ERROR-HANDLING**: Check for missing or incorrect error handling or error preventions.
+10. **A09 - MEMORY-LEAK**:    Check for memory leaks.
+11. **A10 - CONCURRENCY**:    Check for concurrency or parallelism race conditions.
+12. **A11 - PERFORMANCE**:    Check for performance issues.
+13. **A12 - SECURITY**:       Check for security issues.
+14. **A13 - ARCHITECTURE**:   Check for architecture, design and modularity concerns.
+15. **A14 - LOGIC**:          Check for domain logic and runtime processing issues.
+16. **SUMMARY**:              Give a summary of all accepted and rejected code changes.
 
 Procedure
 ---------
