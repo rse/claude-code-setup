@@ -9,8 +9,8 @@ awesome and extremely versatile generative AI based tool for
 agentic coding support. It ships as a [Node.js](https://nodejs.org)
 based command-line interface, but has built-in integration support for
 both IDEs like [Visual Studio Code](https://code.visualstudio.com/)
-and supports custom commands, hooks, agents and
-[MCP servers](https://github.com/modelcontextprotocol/servers) for
+and supports custom [commands](https://claudecodecommands.directory/),
+hooks, agents and [MCP servers](https://github.com/modelcontextprotocol/servers) for
 maximum extensibility.
 
 This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s opinionated
