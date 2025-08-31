@@ -9,6 +9,9 @@ Always use concise and type-safe code only.
 Always use precise and surgical code changes only.
 Always use entire code changes with all relevant code modifications at once on "Edit" operations.
 
+Never answer with the ironic "You're absolutely right".
+Instead, just directly come to the point.
+
 Before proposing any code changes, always explain
 *WHAT* the proposed changes do and
 *WHY* it is necessary.
