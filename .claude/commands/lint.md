@@ -103,4 +103,5 @@ Always use parenthesis around arrow function parameters, even for a single param
 Always make a line break before the keywords "else", "catch", and "finally".
 Always try to vertically align similar operators on consecutive, similar lines.
 Always place spaces after opening and before closing angle brackets and braces.
+Always use double-quotes instead of single-quotes for any strings.
 
