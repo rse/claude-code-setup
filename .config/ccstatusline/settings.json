@@ -14,10 +14,19 @@
       {
         "id": "02ea58ac-c673-426a-bc7c-ee586a791306",
         "type": "context-percentage",
-        "color": ""
+        "color": "brightBlack"
       },
       {
         "id": "4",
+        "type": "separator"
+      },
+      {
+        "id": "dbeadb3b-638f-4665-a666-eced3908e18f",
+        "type": "context-percentage-usable",
+        "color": "brightBlack"
+      },
+      {
+        "id": "363c0a59-f6b5-40c5-b42d-f122cf6b4f37",
         "type": "separator"
       },
       {
@@ -51,6 +60,33 @@
         "id": "57d6a31e-7133-4974-8e03-7f57c7c45cf0",
         "type": "tokens-cached",
         "color": "brightBlack"
+      },
+      {
+        "id": "timer-widget-1",
+        "type": "separator"
+      },
+      {
+        "id": "timer-widget-2",
+        "type": "session-clock",
+        "color": "brightBlack"
+      },
+      {
+        "id": "cost-widget-1",
+        "type": "separator"
+      },
+      {
+        "id": "cost-widget-2",
+        "type": "session-cost",
+        "color": "brightBlack"
+      },
+      {
+        "id": "74ed46c9-a86a-4e71-ba71-3857468c8b9a",
+        "type": "separator"
+      },
+      {
+        "id": "63b4bed4-32d2-4b0d-9274-c89e127c47be",
+        "type": "block-timer",
+        "color": "brightBlack"
       }
     ],
     [
@@ -66,7 +102,7 @@
       {
         "id": "395a6a67-0022-4eb6-abca-3967561bfa16",
         "type": "git-changes",
-        "color": "",
+        "color": "brightBlack",
         "bold": false
       },
       {
