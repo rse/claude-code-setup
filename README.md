@@ -139,7 +139,7 @@ To setup **Claude Code**, just follow the following few steps:
    - Deepseek       (directly)
    - xAI Grok       (via OpenRouter)
 
-   Store those access keys in the following environment variables:
+   Store those access keys in the following temporary environment variables:
 
    ```
    CLAUDE_CODE_KEY_OPENAI_CHATGPT="..."
@@ -182,7 +182,7 @@ To setup **Claude Code**, just follow the following few steps:
    Optionally, and only for the custom `/github` command:
 
    Get a your [Github Private Access Token](https://github.com/settings/personal-access-tokens/new)
-   for API access and store it in an environment variable:
+   for API access and store it in a temporary environment variable:
 
    ```
    CLAUDE_CODE_KEY_GITHUB="..."
@@ -201,7 +201,7 @@ To setup **Claude Code**, just follow the following few steps:
    Optionally, and only for the custom `/ref` and `/exa` commands:
 
    Get a your [Ref](https://ref.tools) and [Exa](https://exa.ai) accounts for API access
-   and store it in an environment variable:
+   and store it in a temporary environment variable:
 
    ```
    CLAUDE_CODE_KEY_REF="..."
