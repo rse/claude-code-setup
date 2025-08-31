@@ -224,6 +224,8 @@ To setup **Claude Code**, just follow the following few steps:
    - [**Claude Code** Free/Pro/Max-5x/Max-20x subscription](https://www.anthropic.com/claude-code#get-started) (recommended)
    - [Anthropic API subscription](https://www.anthropic.com/pricing) (alternatively)
 
+   Using the **Claude Code** subscription is highly recommended.
+
    > Notice: the first option provides access to Anthropic Claude only
    > via Web interfaces and to the API only indirectly via **Claude Code**, while
    > only the second option also allows direct access to the Anthropic Claude API.
