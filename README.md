@@ -55,7 +55,7 @@ This particular Claude Code setup has the following features:
   [Dr. Ralf S. Engelschall](https://engelschall.com), as the default coloring
   is too colorful.
 
-- The following custom commands provide standard reusable functionalties,
+- The following custom commands provide standard reusable functionalities,
   and are the heart of this Claude Code setup:
 
   - [changes](.claude/commands/changes.md):
@@ -75,18 +75,18 @@ This particular Claude Code setup has the following features:
       - [refine](.claude/commands/lint/refine.md):
         The code should be changed: Request a code refinement of a change.
       - [reassess](.claude/commands/lint/reassess.md):
-        The change is onscure: Request a re-assessment of the change.
+        The change is obscure: Request a re-assessment of the change.
       - [nope](.claude/commands/lint/nope.md):
         The change is not acceptable: Reject the code change and continue processing.
   - [hint](.claude/commands/hint.md):
-    Give essential hints on certainly questions.
+    Give essential hints on certain questions.
   - [llm](.claude/commands/llm.md):
     Query foreign Large Language Model (LLM).
   - [quorum](.claude/commands/quorum.md):
     Query multiple foreign Large Language Model (LLM) for a quorum answer.
   - [why](.claude/commands/why.md):
-    Use the "Five-Why" method to analyize the root-cause of a problem.
-  - [exa](.claude/commands/ref.md):
+    Use the "Five-Why" method to analyze the root-cause of a problem.
+  - [exa](.claude/commands/exa.md):
     Use the Exa MCP server to search the Web.
   - [ref](.claude/commands/ref.md):
     Use the Ref MCP server to read Web information into context.
@@ -126,7 +126,7 @@ To setup Claude Code, just follow the following few steps:
    $ sudo claude install
    ```
 
-   > Notice: do not forget to regularily run `sudo claude update` later!
+   > Notice: do not forget to regularly run `sudo claude update` later!
 
 4. [Optional] **SETUP LLM MCP**:
 
@@ -148,7 +148,7 @@ To setup Claude Code, just follow the following few steps:
    CLAUDE_CODE_KEY_OPENROUTER="..."
    ```
 
-   Then instanciate the corresonding MCP servers (adds entries to `~/.claude.json`):
+   Then instantiate the corresponding MCP servers (adds entries to `~/.claude.json`):
 
    ```sh
    claude mcp add --scope user --transport stdio \
@@ -188,7 +188,7 @@ To setup Claude Code, just follow the following few steps:
    CLAUDE_CODE_KEY_GITHUB="..."
    ```
 
-   Then add the corresonding MCP server (adds entry to `~/.claude.json`):
+   Then add the corresponding MCP server (adds entry to `~/.claude.json`):
 
    ```sh
    claude mcp add --scope user --transport http \
@@ -208,29 +208,29 @@ To setup Claude Code, just follow the following few steps:
    CLAUDE_CODE_KEY_EXA="..."
    ```
 
-   Then add the corresonding MCP servers (adds entry to `~/.claude.json`):
+   Then add the corresponding MCP servers (adds entry to `~/.claude.json`):
 
    ```sh
-   claude exa add --scope user --transport http \
-       -- ref "https://mcp.exa.ai/mcp?exaApiKey=$CLAUDE_CODE_KEY_EXA"
+   claude mcp add --scope user --transport http \
+       -- exa "https://mcp.exa.ai/mcp?exaApiKey=$CLAUDE_CODE_KEY_EXA"
    claude mcp add --scope user --transport http \
        -- ref "https://api.ref.tools/mcp?apiKey=$CLAUDE_CODE_KEY_REF"
    ```
 
 7. **GET ACCESS TO CLAUDE CODE**:
 
-   Access to Claude Code:Here you have two options:
+   Access to Claude Code: Here you have two options:
 
    - [Claude Code Free/Pro/Max-5x/Max-20x subscription](https://www.anthropic.com/claude-code#get-started) (recommended)
    - [Anthropic API subscription](https://www.anthropic.com/pricing) (alternatively)
 
-   > Notice: the first option provides access to Anthrophic Claude only
+   > Notice: the first option provides access to Anthropic Claude only
    > via Web interfaces and to the API only indirectly via Claude Code, while
    > only the second option also allows direct access to the Anthropic Claude API.
 
    > Notice: the first option is best for Claude Code because it has less limits
    > and is more cost effective. The second option is more versatile, as you
-   > can use this subcription for more than just Claude Code.
+   > can use this subscription for more than just Claude Code.
 
 8. **LOGIN TO CLAUDE CODE**:
 
