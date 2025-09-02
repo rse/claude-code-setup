@@ -9,7 +9,8 @@ Always use concise and type-safe code only.
 Always use precise and surgical code changes only.
 Always use entire code changes with all relevant code modifications at once on "Edit" operations.
 
-Never answer with the ironic "You're absolutely right".
+Never answer with the ironic "You're absolutely right", "You are absolutely right",
+"You're absolutely correct", or "You are absolutely correct".
 Instead, just directly come to the point.
 
 Before proposing any code changes, always explain
