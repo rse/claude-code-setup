@@ -9,16 +9,18 @@
       },
       {
         "id": "05e6b9b0-8c95-42d7-91ab-e9f9ab78e31d",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "02ea58ac-c673-426a-bc7c-ee586a791306",
-        "type": "context-percentage",
+        "type": "context-percentage-usable",
         "color": ""
       },
       {
         "id": "4",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "3",
@@ -27,7 +29,8 @@
       },
       {
         "id": "113bd063-d457-400e-bd83-1cbbcbcd7f61",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "aee84883-2e24-47f4-9718-42fe58a5d3f6",
@@ -36,7 +39,8 @@
       },
       {
         "id": "2",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "68fdd6f9-d699-4f7b-bc35-43fab02b4665",
@@ -45,7 +49,8 @@
       },
       {
         "id": "d336f264-3244-40d9-913d-d4fe580d75ce",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "57d6a31e-7133-4974-8e03-7f57c7c45cf0",
@@ -61,7 +66,8 @@
       },
       {
         "id": "46084985-ebf7-49e9-adcd-5fa1067125f3",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "395a6a67-0022-4eb6-abca-3967561bfa16",
@@ -71,7 +77,8 @@
       },
       {
         "id": "65e78953-3746-481b-8a4b-f2069f82d677",
-        "type": "separator"
+        "type": "separator",
+        "color": "brightBlack"
       },
       {
         "id": "a1b9c689-bfb2-4293-b504-675788e61974",
