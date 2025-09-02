@@ -7,7 +7,7 @@
 none:
 
 import:
-	./setup install
+	./setup import
 install:
 	./setup install
 uninstall:
