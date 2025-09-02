@@ -13,12 +13,13 @@ and supports custom [commands](https://claudecodecommands.directory/),
 hooks, agents and [MCP servers](https://github.com/modelcontextprotocol/servers) for
 maximum extensibility.
 
-This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s opinionated
-setup for **Claude Code**. If you disagree on any aspect, please just
-don't use it. The main purpose of this repository is to help
-[Dr. Ralf S. Engelschall](https://engelschall.com) and
-his friends and colleagues to quickly setup **Claude Code** in the same
-pre-armed configuration on multiple computers.
+This is [Dr. Ralf S. Engelschall](https://engelschall.com)'s
+opinionated setup for **Claude Code** on the Unix platforms Linux
+and macOS. If you disagree on any aspect, please just don't use
+it. The main purpose of this repository is to help [Dr. Ralf S.
+Engelschall](https://engelschall.com) and his friends and colleagues to
+quickly setup **Claude Code** in the same pre-armed configuration on
+multiple computers.
 
 Sneak Preview
 -------------
