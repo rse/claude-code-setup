@@ -42,7 +42,7 @@ case "$0" in
         ;;
 esac
 
-#   helper functionf for running a shell command
+#   helper function for running a shell command
 run () {
     echo "\$ $@"
     eval "$@"
