@@ -27,13 +27,18 @@ case "$0" in
         basedir=$(cd "$basedir" && pwd)
         ;;
     * )
-        #   no path
-        OIFS="$IFS"; IFS=":"
-        for p in $PATH; do
+        if [[ -f "./$0" ]]; then
+            #   special case of local usage
+            basedir=$(pwd)
+        else
+            #   no path
+            OIFS="$IFS"; IFS=":"
+            for p in $PATH; do
+                IFS="$OIFS"
+                echo "$p"
+            done
             IFS="$OIFS"
-            echo "$p"
-        done
-        IFS="$OIFS"
+        fi
         ;;
 esac
 
