@@ -12,6 +12,7 @@ DIR  .claude/agents
 FILE .claude/agents/llm.md
 FILE .claude/prompt.md
 DIR  .claude/commands
+FILE .claude/commands/prime.md
 FILE .claude/commands/explain.md
 FILE .claude/commands/lint.md
 DIR  .claude/commands/lint

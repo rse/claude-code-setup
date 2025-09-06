@@ -60,6 +60,8 @@ This particular **Claude Code** setup has the following features:
 - The following custom commands provide standard reusable functionalities,
   and are the heart of this **Claude Code** setup:
 
+  - [prime](.claude/commands/prime.md):
+    Prime the session context by reading project key files.
   - [changes](.claude/commands/changes.md):
     Complete *ChangeLog* entries based on Git commit messages.
   - [craft](.claude/commands/craft.md):
