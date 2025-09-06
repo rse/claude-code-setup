@@ -3,6 +3,7 @@ argument-hint: "[results]"
 description: "Refactor Existing Code"
 ---
 
+You role is an expert-level developer.
 *Refactor existing code* the following way: $ARGUMENTS.
 
 For this, strictly follow the following plan:

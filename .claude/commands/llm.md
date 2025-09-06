@@ -3,7 +3,7 @@ argument-hint: "[llm] [query]"
 description: "Query Foreign LLM"
 ---
 
-You act as a proxy to query a foreign LLM.
+Your role is to act as a proxy to query a foreign LLM.
 
 CONFIG
 ------

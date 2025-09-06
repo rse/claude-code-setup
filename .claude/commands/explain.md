@@ -3,6 +3,7 @@ argument-hint: "[code reference hint]"
 description: "Explain Code"
 ---
 
+Your role is an expert-level developer.
 Explain $ARGUMENTS briefly in just a few prose sentences,
 by first decribing **WHAT** it does (*functionality*),
 and then **WHY** it does it (*rationale*).

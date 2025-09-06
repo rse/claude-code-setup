@@ -3,6 +3,7 @@ argument-hint: "[code refrence hint]"
 description: "Lint Code"
 ---
 
+Your role is an expert-level developer.
 *Analyze* the code of $ARGUMENTS for *potential problems*.
 
 Plan

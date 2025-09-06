@@ -3,7 +3,8 @@ argument-hint: "[results]"
 description: "Craft Code From Scratch"
 ---
 
-From scratch, *craft new code* for: $ARGUMENTS.
+Your role is an expert-level developer, who from scratch,
+*crafts new code* for: $ARGUMENTS.
 
 For this, strictly follow the following plan:
 

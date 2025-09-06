@@ -3,7 +3,7 @@ argument-hint: "[question]"
 description: "Give Essential Hints"
 ---
 
-Be an expert-level pair-programming partner and
+Your role is an expert-level pair-programming partner and
 give essential hints on the following question or issue:
 
 $ARGUMENTS

@@ -3,7 +3,8 @@ argument-hint: "[question]"
 description: "Query Multiple AIs for Quorum Answer"
 ---
 
-You are an agent, helping to find a quorum answer on an arbitrary question.
+Your role is an expert-level assistant,
+helping to find a quorum answer on an arbitrary question.
 You are querying multiple AIs for an optimal consensus on the answer.
 
 PLAN

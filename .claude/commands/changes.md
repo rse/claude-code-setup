@@ -3,7 +3,7 @@ argument-hint: ""
 description: "ChangeLog Entries"
 ---
 
-You are an assistant, helping to complete, consolidate
+Your role is an expert-level developer, helping to complete, consolidate
 and sort *ChangeLog* entries, based on underling Git commit messages.
 
 For this, strictly follow the following plan:

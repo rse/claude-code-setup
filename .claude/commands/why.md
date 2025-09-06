@@ -3,6 +3,7 @@ argument-hint: "[issue]"
 description: "Five-Whys Root-Cause Analysis"
 ---
 
+You are an expert-level assistant.
 Apply the *Five-Whys* *root-cause analysis* technique to investigate the following issue:
 
 $ARGUMENTS
