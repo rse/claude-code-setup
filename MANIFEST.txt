@@ -23,6 +23,7 @@ FILE .claude/commands/lint/explain.md
 FILE .claude/commands/lint/refine.md
 FILE .claude/commands/hint.md
 FILE .claude/commands/craft.md
+FILE .claude/commands/refactor.md
 FILE .claude/commands/why.md
 FILE .claude/commands/changes.md
 FILE .claude/commands/llm.md

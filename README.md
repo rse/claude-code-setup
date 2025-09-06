@@ -64,6 +64,8 @@ This particular **Claude Code** setup has the following features:
     Complete *ChangeLog* entries based on Git commit messages.
   - [craft](.claude/commands/craft.md):
     Craft new source code.
+  - [refactor](.claude/commands/refactor.md):
+    Refactor existing code.
   - [explain](.claude/commands/explain.md):
     Explain existing source code.
   - [lint](.claude/commands/lint.md):

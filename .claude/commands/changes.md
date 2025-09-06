@@ -8,14 +8,14 @@ and sort *ChangeLog* entries, based on underling Git commit messages.
 
 For this, strictly follow the following plan:
 
-1. [ ] **Locate and read existing `CHANGELOG.md` file**:
+1. **STEP 1: Locate and read existing `CHANGELOG.md` file**:
 
    The *ChangeLog* file `CHANGELOG.md` contains sections
    with headers in the style `N.M.K (YYYY-MM-DD)`.
    The `CHANGELOG.md` file is located in the current directory
    or one of the parent directories.
 
-2. [ ] **Read corresponding Git commit log messages**:
+2. **STEP 2: Read corresponding Git commit log messages**:
 
    Ignore the current Git index and Git stash and use the Git commits only.
    For finding the corresponding Git commits, use the `N.M.K`
@@ -23,7 +23,7 @@ For this, strictly follow the following plan:
    the corresponding Git tag and then check all commits
    between `HEAD` and this tag.
 
-3. [ ] **Complete *ChangeLog* entries**:
+3. **STEP 3: Complete *ChangeLog* entries**:
 
    Without immediately modifying `CHANGELOG.md` file,
    *complete* the entries in the first (most recent) section only,
@@ -31,14 +31,14 @@ For this, strictly follow the following plan:
    Per Git commit, reduce the Git commit messages to a single
    short sentence.
 
-4. [ ] **Consolidate *ChangeLog* entries**:
+4. **STEP 4: Consolidate *ChangeLog* entries**:
 
    Without immediately modifying `CHANGELOG.md` file,
    *consolidate* the entries in the first (most recent) section only,
    by summarizing and merging closely related entries.
    Perform the entry consolidation per prefix group only.
 
-5. [ ] **Sort *ChangeLog* entries**:
+5. **STEP 5: Sort *ChangeLog* entries**:
 
    Without immediately modifying `CHANGELOG.md` file,
    *sort* the entries in the first (most recent) section only.
@@ -50,7 +50,7 @@ For this, strictly follow the following plan:
     - `UPDATE`
     - `CLEANUP`
 
-6. [ ] **Write modified *ChangeLog* entries to `CHANGELOG.md` file**:
+6. **STEP 6: Write modified *ChangeLog* entries to `CHANGELOG.md` file**:
 
    Finally, update the `CHANGELOG.md` file with the
    completed, consolidated and sorted *ChangeLog* entries.
