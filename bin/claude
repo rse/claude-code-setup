@@ -24,17 +24,26 @@ if [[ $claude = "" ]]; then
     exit 1
 fi
 
+#   determine whether running NPM requires user
+#   or root privileges, based on Node installation prefix
+npm_prefix=$(npm config get prefix)
+if [[ -w "$npm_prefix" ]]; then
+    execute=""
+else
+    execute="sudo"
+fi
+
 #   dispatch according to command arguments
 case "$1" in
     install )
         #   install claude(1)
         echo "++ install Claude Code tool"
-        sudo npm install -y -g \
+        $execute npm install -y -g \
             @anthropic-ai/claude-code
 
         #   install companion tools
         echo "++ install Claude Code companion tools"
-        sudo npm install -y -g \
+        $execute npm install -y -g \
             ccstatusline \
             tweakcc \
             @pyroprompts/any-chat-completions-mcp
@@ -43,7 +52,7 @@ case "$1" in
     update )
         #   update companion tools
         echo "++ update Claude Code companion tools"
-        sudo npm update -y -g \
+        $execute npm update -y -g \
             ccstatusline \
             tweakcc \
             @pyroprompts/any-chat-completions-mcp
@@ -51,12 +60,12 @@ case "$1" in
         #   update claude(1)
         echo ""
         echo "++ update Claude Code tool"
-        sudo "$claude" update
+        $execute "$claude" update
 
         #   re-tweak/patch afterwards
         echo ""
         echo "++ patch Claude Code"
-        sudo tweakcc -a
+        $execute tweakcc -a
         ;;
 
      * )
