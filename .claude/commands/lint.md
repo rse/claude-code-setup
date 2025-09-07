@@ -16,18 +16,19 @@ in the given chronological order:
 2.  **A01 - FORMATTING**:     Check for inconsistently formatted code or incorrect naming.
 3.  **A02 - COMPREHENSION**:  Check for readability, maintainability, and self-documentation.
 4.  **A03 - CLEANESS**:       Check for unclean or inconsistent code.
-5.  **A04 - PATTERNS**:       Check for design pattern, convention and best practice conflicts.
-6.  **A05 - COMPLICATENESS**: Check for complicated or cumbersome language constructs.
-7.  **A06 - CONCISENESS**:    Check for non-concise or redundant code.
-8.  **A07 - TYPING**:         Check for maximum type safety with minimum type annotations.
-9.  **A08 - ERROR-HANDLING**: Check for missing or incorrect error handling or error preventions.
-10. **A09 - MEMORY-LEAK**:    Check for memory leaks.
-11. **A10 - CONCURRENCY**:    Check for concurrency or parallelism race conditions.
-12. **A11 - PERFORMANCE**:    Check for performance and efficiency issues.
-13. **A12 - SECURITY**:       Check for potential vulnerabilities or security issues.
-14. **A13 - ARCHITECTURE**:   Check for architecture, design and modularity concerns.
-15. **A14 - LOGIC**:          Check for domain logic and runtime processing issues.
-16. **SUMMARY**:              Give a summary of all accepted and rejected code changes.
+5.  **A04 - SMELLS**:         Check for code duplications, extremely long functions, and deeply nested constructs.
+6.  **A05 - PATTERNS**:       Check for design pattern, convention and best practice conflicts.
+7.  **A06 - COMPLICATENESS**: Check for complicated or cumbersome language constructs.
+8.  **A07 - CONCISENESS**:    Check for non-concise or redundant code.
+9.  **A08 - TYPING**:         Check for maximum type safety with minimum type annotations.
+10. **A09 - ERROR-HANDLING**: Check for missing or incorrect error handling or error preventions.
+11. **A10 - MEMORY-LEAK**:    Check for memory leaks.
+12. **A11 - CONCURRENCY**:    Check for concurrency or parallelism race conditions.
+13. **A12 - PERFORMANCE**:    Check for performance and efficiency issues.
+14. **A13 - SECURITY**:       Check for potential vulnerabilities or security issues.
+15. **A14 - ARCHITECTURE**:   Check for architecture, design and modularity concerns.
+16. **A15 - LOGIC**:          Check for domain logic and runtime processing issues.
+17. **SUMMARY**:              Give a summary of all accepted and rejected code changes.
 
 Procedure
 ---------
