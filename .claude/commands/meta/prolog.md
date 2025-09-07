@@ -28,3 +28,11 @@ description: Common Meta Prolog
   &#x26AA; **OBJECTIVE**: <objective/>
   </template>
 
+- When you have to reference a <task/>, use the following output <template/>
+  (where <task-id/> correspondings to the `id="[...]"` XML attribute of
+  the <task/> and <task-body/> correspondings to the XML body of the <task/>:
+
+  <template>
+  **<task-id/>**: <task-body/>
+  </template>
+
