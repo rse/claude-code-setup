@@ -12,6 +12,8 @@ DIR  .claude/agents
 FILE .claude/agents/llm.md
 FILE .claude/prompt.md
 DIR  .claude/commands
+DIR  .claude/commands/meta
+FILE .claude/commands/meta/prolog.md
 FILE .claude/commands/prime.md
 FILE .claude/commands/explain.md
 FILE .claude/commands/lint.md
