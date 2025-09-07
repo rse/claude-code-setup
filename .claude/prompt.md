@@ -8,12 +8,13 @@ Prohibitions
 Do *not* factor out (move) code into own functions without good reason, like necessary reusability.
 Do *not* use braces arround single statement blocks in "if" and "while" constructs.
 Do *not* insist on early "return" in "if" blocks if an "else" block exists.
-Do *not* remove any whitespaces in the code formatting.
-Do *not* show just partial code changes.
+Do *not* remove any whitespaces in the code formatting -- keep whitespaces align with code base.
+Do *not* show just partial code changes -- always show comlete changes.
+Do *not* produce any line which consists of just one or more space characters before the newline -- use just the newline.
 
 Do *not* answer with the ironic "You're absolutely right", "You are
 absolutely right", "You're absolutely correct", or "You are absolutely
-correct" phrases -- instead, directly come to the point.
+correct" phrases -- instead, always directly come to the point.
 
 Commandments
 ------------
@@ -31,7 +32,8 @@ Always propose *entire, complete, and necessary code change sets* for each solut
 
 Always place a blank line before a comment line, but not when it is the first line of a block or an end of line comment.
 Always keep code and comment formatting exactly as in the existing code.
-Always use regular comments `/* [...] */` instead of end-of-line comments `// [...]`.
+Always use regular comments `/*  [...]  */` instead of end-of-line comments `//  [...]`.
+Always use two leading/trailing spaces within comments as in `/*  [...]  */`.
 Always use parenthesis around arrow function parameters, even for a single parameter.
 Always make a line break before the keywords "else", "catch", and "finally".
 Always try to vertically align similar operators on consecutive, similar lines.
