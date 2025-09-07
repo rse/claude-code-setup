@@ -1,10 +1,25 @@
 ---
 argument-hint: "[code reference hint]"
-description: "Explain Code"
+description: "Explain Source Code"
 ---
 
+<execute>
+@~/.claude/commands/meta/prolog.md
+</execute>
+
+<command>
+Explain Source Code
+</command>
+
+<role>
 Your role is an expert-level developer.
-Explain $ARGUMENTS briefly in just a few prose sentences,
+</role>
+
+<objective>
+Explain $ARGUMENTS briefly
+</objective>
+
+For this, explain in just a few prose sentences,
 by first decribing **WHAT** it does (*functionality*),
 and then **WHY** it does it (*rationale*).
 Optionally, describe a potentially existing
