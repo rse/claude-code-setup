@@ -8,14 +8,13 @@ description: "Lint Source Code"
 </execute>
 
 <command>Lint Source Code</command>
-
 <role>Your role is an expert-level developer.</role>
 <objective>*Analyze* the code of $ARGUMENTS for *potential problems*.</objective>
 
 Plan
 ----
 
-Closely follow the following *<plan/>* of distinct *aspects*,
+Closely follow the following *<plan/>* of distinct *<task/>*,
 in the given chronological order:
 
 <plan>
@@ -45,10 +44,10 @@ Procedure
 For each *potential problem* you detect, propose a corresponding
 *complete code change set*. Keep all changes as *surgical and small* as possible.
 
-In case of no code change proposal at all for an entire aspect,
+In case of no code change proposal at all for an entire <task/>,
 display this with the following output <template/>, where the
 `**AX - XXX**: Check for [...]` is a reference to the
-current aspect you analyzed:
+current <task/> you analyzed:
 
 <template>
 **AX - XXX**: Check for [...]
@@ -61,7 +60,7 @@ Before any code change, provide a *brief explanation*
 Emphasize important keywords in your explanation texts and
 use the following <template/> for those outputs, where the
 `**AX - XXX**: Check for [...]` is a reference to the
-current aspect you are analyzing:
+current <task/> you are analyzing:
 
 <template>
 **AX - XXX**: Check for [...]
@@ -73,11 +72,11 @@ current aspect you are analyzing:
 
 At the end, do not give any more explanations, except for
 a summary of all accepted and reject code
-changes. For this, according to the original aspect ordering,
+changes. For this, according to the original <task/> ordering,
 use the following output <template/>, where
-`&#x1F7E0; **AX - XXX**: N issues` is used for aspects
+`&#x1F7E0; **AX - XXX**: N issues` is used for <task/>
 with N issues and `&#x1F535; **AX - XXX**: no issues`
-for aspects without any issues:
+for <task/> without any issues:
 
 <template>
 **SUMMARY**:
