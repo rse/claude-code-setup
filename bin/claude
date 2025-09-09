@@ -95,7 +95,6 @@ case "$1" in
             set -- --append-system-prompt "$prompt" "$@"
         fi
         set -- "$claude" "$@"
-        clear
         exec "$@"
         ;;
 esac
