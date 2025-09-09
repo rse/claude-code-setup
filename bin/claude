@@ -52,7 +52,7 @@ case "$1" in
     update )
         #   update companion tools
         echo "++ update Claude Code companion tools"
-        $execute npm update --silent -y -g \
+        $execute npm update --quiet --silent -y -g \
             ccstatusline \
             tweakcc \
             @pyroprompts/any-chat-completions-mcp
@@ -60,12 +60,16 @@ case "$1" in
         #   update claude(1)
         echo ""
         echo "++ update Claude Code tool"
+        version_old=$(claude --version | awk '{ print $1 }')
         $execute "$claude" update
+        version_new=$(claude --version | awk '{ print $1 }')
 
-        #   re-tweak/patch afterwards
-        echo ""
-        echo "++ patch Claude Code"
-        $execute tweakcc -a
+        #   re-tweak/patch afterwards (if Claude was changed)
+        if [[ $version_old != $version_new ]]; then
+            echo ""
+            echo "++ patch Claude Code"
+            $execute tweakcc -a
+        fi
         ;;
 
      * )
