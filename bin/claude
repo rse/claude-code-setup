@@ -58,7 +58,6 @@ case "$1" in
             @pyroprompts/any-chat-completions-mcp
 
         #   update claude(1)
-        echo ""
         echo "++ update Claude Code tool"
         version_old=$(claude --version | awk '{ print $1 }')
         $execute "$claude" update
@@ -66,7 +65,6 @@ case "$1" in
 
         #   re-tweak/patch afterwards (if Claude was changed)
         if [[ $version_old != $version_new ]]; then
-            echo ""
             echo "++ patch Claude Code"
             $execute tweakcc -a
         fi
