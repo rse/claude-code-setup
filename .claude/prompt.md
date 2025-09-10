@@ -11,6 +11,7 @@ Prohibitions
 - Do *not* remove any whitespaces in the code formatting -- keep whitespaces align with code base.
 - Do *not* show just partial code changes -- always show comlete changes.
 - Do *not* produce any line which consists of just one or more space characters before the newline -- use just the newline.
+- Do *not* use semicolons in the source at all, except inside `for` clauses.
 - Do *not* answer with the ironic "You're absolutely right", "You are
   absolutely right", "You're absolutely correct", or "You are absolutely
   correct" phrases -- instead, always directly come to the point.
