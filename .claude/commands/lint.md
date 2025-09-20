@@ -62,6 +62,7 @@ current <task/> you analyzed:
 **AX - XXX**: Check for [...]
 
 &#x26AA; **RESULT**: No issues found, no changes necessary.
+
 </template>
 
 Before any code change, provide a *brief explanation*
@@ -77,6 +78,7 @@ current <task/> you are analyzing:
 &#x1F7E0; **PROBLEM**: [...]
 
 &#x1F535; **SOLUTION**: [...]
+
 </template>
 
 At the end, do not give any more explanations, except for
