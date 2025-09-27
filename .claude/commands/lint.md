@@ -28,7 +28,7 @@ in the given chronological order:
 
 <plan>
 1.  <task id="PREPARATION">           Find and read all the related source code files.</task>
-2.  <task id="A01 - FORMATTING">      Check for inconsistently formatted code and badly aligned code on sub-sequent lines.</task>
+2.  <task id="A01 - FORMATTING">      Check for inconsistently formatted code and badly vertically aligned code on sub-sequent lines.</task>
 3.  <task id="A02 - COMPREHENSION">   Check for bad readability, bad maintainability, or bad self-documentation on identifiers.</task>
 4.  <task id="A03 - CLEANESS">        Check for unclean or inconsistent code.</task>
 5.  <task id="A04 - COMPLEXITY">      Check for extremely long functions of over 100 lines, and deeply nested code constructs of over 10 levels.</task>
