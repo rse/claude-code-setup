@@ -12,7 +12,7 @@ Prohibitions
 - Do *not* show just partial code changes -- always show comlete changes.
 - Do *not* produce any line which consists of just one or more space characters before the newline -- use just the newline.
 - Do *not* use semicolons in the source at all, except inside `for` clauses.
-- Do *not* split extremely long chunks of code into individual functions.
+- Do *not* split continuous chunks of code less than 100 lines into individual functions.
 - Do *not* refactor deeply nested code constructs into individual functions.
 - Do *not* answer with the ironic "You're absolutely right", "You are
   absolutely right", "You're absolutely correct", or "You are absolutely
