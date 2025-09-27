@@ -37,4 +37,5 @@ Commandments
 - Try to *vertically align similar operators* on consecutive, similar lines.
 - Place spaces after opening and before closing angle brackets and braces.
 - Use *double-quotes* (`"[...]"`) instead of single-quotes (`'[...]'`) for all strings.
+- Use K&R coding style with *opening braces* at end of lines and *closing braces* at the begin of lines.
 
