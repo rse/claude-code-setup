@@ -90,7 +90,7 @@ case "$1" in
                 if [[ -f "$dir/etc/claude.md" ]]; then
                     context+=("$dir/etc/claude.md")
                 fi
-                if [ -f "$dir/.claude/CLAUDE.md" ]; then
+                if [[ -f "$dir/.claude/CLAUDE.md" ]]; then
                     context+=("$dir/.claude/CLAUDE.md")
                 fi
             fi
@@ -103,8 +103,8 @@ case "$1" in
         fi
 
         #   determine claude(1) command and pass-through execution
-        if [ -f "$HOME/.claude/prompt.md" ]; then
-            prompt=`cat "$HOME/.claude/prompt.md" | sed '/^$/d' | tr '\n' ' '`
+        if [[ -f "$HOME/.claude/prompt.md" ]]; then
+            prompt=$(cat "$HOME/.claude/prompt.md" | sed '/^$/d' | tr '\n' ' ')
             set -- --append-system-prompt "$prompt" "$@"
         fi
         set -- "$claude" "$@"
