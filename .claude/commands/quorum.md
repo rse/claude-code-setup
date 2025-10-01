@@ -55,12 +55,12 @@ Then:
 1. Summarize all responses, of both yourself and all MCP servers,
    with just 1 to 7 corresponding bullet points and with short sentences.
 2. Determine, on a Likert scale of 0..5, the amount of the overall
-   consensus of all the responses. 
+   consensus of all the responses.
 
 OUTPUT
 ------
 
-Finally show the summary, the consensus and the complete and unmodified responses 
+Finally show the summary, the consensus and the complete and unmodified responses
 of yourself and each of the MCP servers, based on the following output <template/>:
 
 <template>
