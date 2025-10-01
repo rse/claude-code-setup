@@ -30,22 +30,23 @@ in the given chronological order:
 1.  <task id="PREPARATION">           Find and read all the related source code files.</task>
 2.  <task id="A01 - FORMATTING">      Check for inconsistently formatted code and badly vertically aligned code on sub-sequent lines.</task>
 3.  <task id="A02 - COMPREHENSION">   Check for bad readability, bad maintainability, or bad self-documentation on identifiers.</task>
-4.  <task id="A03 - CLEANESS">        Check for unclean or inconsistent code.</task>
-5.  <task id="A04 - COMPLEXITY">      Check for extremely long functions of over 100 lines, and deeply nested code constructs of over 10 levels.</task>
-6.  <task id="A05 - REDUNDANCY">      Check for redundancies through duplications of identical code or nearly identical code.</task>
-7.  <task id="A06 - PATTERNS">        Check for broken design patterns, broken conventions, or broken best practices.</task>
-8.  <task id="A07 - COMPLICATENESS">  Check for complicated or cumbersome code constructs.</task>
-9.  <task id="A08 - CONCISENESS">     Check for non-concise or redundant code.</task>
-10. <task id="A09 - SMELLS">          Check for unnecessary type casts, problematic value coercens, surprising void() and risky eval() constructs.</task>
-11. <task id="A10 - TYPING">          Check for broken "maximum type safety with minimum type annotations" rule.</task>
-12. <task id="A11 - ERROR-HANDLING">  Check for missing, incorrect or inconsistent error handling or error preventions.</task>
-13. <task id="A12 - MEMORY-LEAK">     Check for memory leaks and inconsistent resource allocation/deallocation pairs.</task>
-14. <task id="A13 - CONCURRENCY">     Check for concurrency or parallelism race conditions.</task>
-15. <task id="A14 - PERFORMANCE">     Check for bad performance and inefficiency issues.</task>
-16. <task id="A15 - SECURITY">        Check for potential vulnerabilities, typical security issues, and missing essential validations.</task>
-17. <task id="A16 - ARCHITECTURE">    Check for architecture, design, or modularity concerns.</task>
-18. <task id="A17 - LOGIC">           Check for wrong and inconsistent domain logic.</task>
-19. <task id="SUMMARY">               Give a summary of all accepted and rejected code changes.</task>
+4.  <task id="A03 - CLEANESS">        Check for unclean code and inconsistent code.</task>
+5.  <task id="A04 - SPELLING">        Check for typos, spelling errors, or incorrect grammar in identifiers and comments.</task>
+6.  <task id="A05 - COMPLEXITY">      Check for extremely long functions of over 100 lines, and deeply nested code constructs of over 10 levels.</task>
+7.  <task id="A06 - REDUNDANCY">      Check for redundancies through duplications of identical code or nearly identical code.</task>
+8.  <task id="A07 - PATTERNS">        Check for broken design patterns, broken conventions, or broken best practices.</task>
+9.  <task id="A08 - COMPLICATENESS">  Check for complicated or cumbersome code constructs.</task>
+10. <task id="A09 - CONCISENESS">     Check for non-concise or redundant code.</task>
+11. <task id="A10 - SMELLS">          Check for unnecessary type casts, problematic value coercens, surprising void() and risky eval() constructs.</task>
+12. <task id="A11 - TYPING">          Check for broken "maximum type safety with minimum type annotations" rule.</task>
+13. <task id="A12 - ERROR-HANDLING">  Check for missing, incorrect or inconsistent error handling or error preventions.</task>
+14. <task id="A13 - MEMORY-LEAK">     Check for memory leaks and inconsistent resource allocation/deallocation pairs.</task>
+15. <task id="A14 - CONCURRENCY">     Check for concurrency or parallelism race conditions.</task>
+16. <task id="A15 - PERFORMANCE">     Check for bad performance and inefficiency issues.</task>
+17. <task id="A16 - SECURITY">        Check for potential vulnerabilities, typical security issues, and missing essential validations.</task>
+18. <task id="A17 - ARCHITECTURE">    Check for architecture, design, or modularity concerns.</task>
+19. <task id="A18 - LOGIC">           Check for wrong and inconsistent domain logic.</task>
+20. <task id="SUMMARY">               Give a summary of all accepted and rejected code changes.</task>
 </plan>
 
 Procedure
