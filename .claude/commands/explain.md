@@ -31,10 +31,10 @@ emphasize important keywords in the text paragraphs:
 <template>
 Explanation of: **$ARGUMENTS**
 
-&#x25CB; **WHAT**: [...]
+&#x26AA; **WHAT**: [...]
 
-&#x25CB; **WHY**:  [...]
+&#x1F535; **WHY**:  [...]
 
-&#x25CB; **CRUX**: [...]
+&#x1F7E0; **CRUX**: [...]
 </template>
 
