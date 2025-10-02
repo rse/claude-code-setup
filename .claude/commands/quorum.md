@@ -8,7 +8,7 @@ description: "Query Multiple AIs for Quorum Answer"
 </execute>
 
 <command>
-Lint Source Code
+Query Multiple AIs for Quorum Answer
 </command>
 
 <role>
