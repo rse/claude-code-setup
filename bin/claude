@@ -30,7 +30,7 @@ npm_prefix=$(npm config get prefix)
 if [[ -w "$npm_prefix" ]]; then
     execute=""
 else
-    execute="sudo"
+    execute="sudo -i"
 fi
 
 #   dispatch according to command arguments
