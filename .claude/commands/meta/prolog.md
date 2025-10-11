@@ -1,6 +1,3 @@
----
-description: Common Meta Prolog
----
 
 - *IMPORTANT*: You *MUST* read and sequentially execute every <task/> in
   a <plan/> *EXACTLY* as the instructions specify.
