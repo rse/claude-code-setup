@@ -130,8 +130,8 @@ case "$1" in
             fi
             dir=$(dirname "$dir" | sed -e 's;^/$;;')
         done
-        if [[ ${#context[@]} > 0 ]]; then
-            cat ${context[@]} > "$HOME/.claude/CLAUDE.md"
+        if [[ ${#context[@]} -gt 0 ]]; then
+            cat "${context[@]}" > "$HOME/.claude/CLAUDE.md"
         else
             rm -f "$HOME/.claude/CLAUDE.md"
         fi
