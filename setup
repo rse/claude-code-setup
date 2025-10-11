@@ -35,7 +35,10 @@ case "$0" in
             OIFS="$IFS"; IFS=":"
             for p in $PATH; do
                 IFS="$OIFS"
-                echo "$p"
+                if [[ -f "$p/$0" ]]; then
+                    basedir="$p"
+                    break
+                fi
             done
             IFS="$OIFS"
         fi
