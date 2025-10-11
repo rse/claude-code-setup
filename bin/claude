@@ -20,7 +20,7 @@ for p in ${PATH//:/ }; do
     fi
 done
 if [[ $claude = "" ]]; then
-    echo "ERROR: no real claude(1) found in \$PATH" 1>&2
+    echo "$0: ERROR: no real claude(1) found in \$PATH" 1>&2
     exit 1
 fi
 
@@ -43,7 +43,11 @@ npm_version () {
 #   helper function for installing NPM package
 npm_install () {
     local pkg="$1"
-    version_new=$(npm show "$pkg" version)
+    version_new=$(npm show "$pkg" version 2>/dev/null)
+    if [[ -z "$version_new" ]]; then
+        echo "$0: ERROR: failed to determine version for NPM package: $pkg" 1>&2
+        exit 1
+    fi
     echo "++ installing NPM package: $pkg ($version_new)"
     $execute npm install --quiet --silent -y -g "$pkg@$version_new"
 }
@@ -52,7 +56,11 @@ npm_install () {
 npm_update () {
     local pkg="$1"
     version_old=$(npm_version "$pkg")
-    version_new=$(npm show "$pkg" version)
+    version_new=$(npm show "$pkg" version 2>/dev/null)
+    if [[ -z "$version_new" ]]; then
+        echo "$0: ERROR: failed to determine version for NPM package: $pkg" 1>&2
+        exit 1
+    fi
     if [[ $version_old != $version_new ]]; then
         echo "++ updating NPM package: $pkg ($version_old -> $version_new)"
         $execute npm install --quiet --silent -y -g "$pkg@$version_new"
