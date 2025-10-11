@@ -99,6 +99,7 @@ case "$1" in
         #   re-tweak/re-patch claude(1)
         if [[ $version_old != $version_new ]]; then
             echo "++ patch Claude Code"
+            rm -f "$HOME/.tweakcc/cli.js.backup"
             $execute tweakcc -a
         fi
 
