@@ -37,7 +37,7 @@ in the given chronological order:
 8.  <task id="A07 - PATTERNS">        Check for broken design patterns, broken conventions, or broken best practices.</task>
 9.  <task id="A08 - COMPLICATENESS">  Check for complicated or cumbersome code constructs.</task>
 10. <task id="A09 - CONCISENESS">     Check for non-concise or redundant code.</task>
-11. <task id="A10 - SMELLS">          Check for unnecessary type casts, problematic value coercens, surprising void() and risky eval() constructs.</task>
+11. <task id="A10 - SMELLS">          Check for unnecessary type casts, problematic value coercions, surprising void() and risky eval() constructs.</task>
 12. <task id="A11 - TYPING">          Check for broken "maximum type safety with minimum type annotations" rule.</task>
 13. <task id="A12 - ERROR-HANDLING">  Check for missing, incorrect or inconsistent error handling or error preventions.</task>
 14. <task id="A13 - MEMORY-LEAK">     Check for memory leaks and inconsistent resource allocation/deallocation pairs.</task>
