@@ -33,37 +33,62 @@ else
     execute="sudo -i"
 fi
 
+#   helper function for querying NPM package version
+npm_version () {
+    local pkg="$1"
+    $execute npm list -g --depth=0 "$pkg" | \
+        grep "$pkg" | sed "s/.*@//"
+}
+
+#   helper function for installing NPM package
+npm_install () {
+    local pkg="$1"
+    version_new=$(npm show "$pkg" version)
+    echo "++ installing NPM package: $pkg ($version_new)"
+    $execute npm install --quiet --silent -y -g "$pkg@$version_new"
+}
+
+#   helper function for updating NPM package
+npm_update () {
+    local pkg="$1"
+    version_old=$(npm_version "$pkg")
+    version_new=$(npm show "$pkg" version)
+    if [[ $version_old != $version_new ]]; then
+        echo "++ updating NPM package: $pkg ($version_old -> $version_new)"
+        $execute npm install --quiet --silent -y -g "$pkg@$version_new"
+    else
+        echo "++ updating NPM package: $pkg ($version_old) -- still up-to-date"
+    fi
+}
+
 #   dispatch according to command arguments
 case "$1" in
     install )
         #   install claude(1)
-        echo "++ install Claude Code tool"
-        $execute npm install --silent -y -g \
-            @anthropic-ai/claude-code
+        npm_install @anthropic-ai/claude-code
 
         #   install companion tools
-        echo "++ install Claude Code companion tools"
-        $execute npm install --silent -y -g \
-            ccstatusline \
-            tweakcc \
-            @pyroprompts/any-chat-completions-mcp
+        npm_install ccstatusline
+        npm_install tweakcc
+        npm_install @pyroprompts/any-chat-completions-mcp
+
+        #   tweak/patch claude(1)
+        echo "++ patch Claude Code"
+        $execute tweakcc -a
         ;;
 
     update )
         #   update companion tools
-        echo "++ update Claude Code companion tools"
-        $execute npm update --quiet --silent -y -g \
-            ccstatusline \
-            tweakcc \
-            @pyroprompts/any-chat-completions-mcp
+        npm_update ccstatusline
+        npm_update tweakcc
+        npm_update @pyroprompts/any-chat-completions-mcp
 
         #   update claude(1)
-        echo "++ update Claude Code tool"
-        version_old=$(claude --version | awk '{ print $1 }')
-        $execute "$claude" update
-        version_new=$(claude --version | awk '{ print $1 }')
+        version_old=$(npm_version @anthropic-ai/claude-code)
+        npm_update @anthropic-ai/claude-code
+        version_new=$(npm_version @anthropic-ai/claude-code)
 
-        #   re-tweak/patch afterwards (if Claude was changed)
+        #   re-tweak/re-patch claude(1)
         if [[ $version_old != $version_new ]]; then
             echo "++ patch Claude Code"
             $execute tweakcc -a
