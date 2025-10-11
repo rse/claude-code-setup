@@ -1,8 +1,8 @@
 {
   "ccVersion": "2.0.14",
   "ccInstallationDir": null,
-  "lastModified": "2025-10-11T16:03:24.108Z",
-  "changesApplied": false,
+  "lastModified": "2025-10-11T16:20:14.700Z",
+  "changesApplied": true,
   "settings": {
     "themes": [
       {
@@ -479,7 +479,7 @@
           "rainbow_violet_shimmer": "rgb(230,180,210)",
           "clawd_body": "rgb(152,119,52)",
           "clawd_background": "rgb(0,0,0)",
-          "userMessageBackground": "rgb(55, 55, 55)",
+          "userMessageBackground": "rgb(162,186,251)",
           "bashMessageBackgroundColor": "rgb(65, 60, 65)",
           "memoryBackgroundColor": "rgb(55, 65, 70)",
           "rate_limit_fill": "rgb(177,185,249)",
