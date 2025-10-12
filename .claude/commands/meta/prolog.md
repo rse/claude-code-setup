@@ -17,6 +17,8 @@
   except for replacing the placeholders `<xxx/>` and `[...]` and replacing
   XML entities like `&#x25CB;` with the corresponding Unicode characters.
 
+- *IMPORTANT*: You *MUST* *NEVER* output any `---` lines.
+
 - Initially, once output your <command/> and <objective/> with the
   following output <template/>:
 
