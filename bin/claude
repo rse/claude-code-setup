@@ -31,7 +31,7 @@ fi
 npm_version () {
     local pkg="$1"
     $execute npm list -g --depth=0 "$pkg" 2>/dev/null | \
-        grep "$pkg" | sed "s/.*@//" || echo ""
+        grep "$pkg@" | sed "s/.*@//" || echo ""
 }
 
 #   helper function for installing NPM package
