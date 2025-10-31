@@ -6,19 +6,13 @@
 ##
 
 #   determine real claude(1) command
-claude=""
-first=yes
+claudes=()
 for p in ${PATH//:/ }; do
     if [[ -x "$p/claude" ]]; then
-        if [[ $first = yes ]]; then
-            first=no
-            continue
-        else
-            claude="$p/claude"
-            break
-        fi
+        claudes+=("$p/claude")
     fi
 done
+claude=${claudes[1]}
 if [[ -z $claude ]]; then
     echo "$0: ERROR: no real claude(1) found in \$PATH" 1>&2
     exit 1
