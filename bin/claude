@@ -19,7 +19,7 @@ for p in ${PATH//:/ }; do
         fi
     fi
 done
-if [[ $claude = "" ]]; then
+if [[ -z $claude ]]; then
     echo "$0: ERROR: no real claude(1) found in \$PATH" 1>&2
     exit 1
 fi
@@ -36,8 +36,8 @@ fi
 #   helper function for querying NPM package version
 npm_version () {
     local pkg="$1"
-    $execute npm list -g --depth=0 "$pkg" | \
-        grep "$pkg" | sed "s/.*@//"
+    $execute npm list -g --depth=0 "$pkg" 2>/dev/null | \
+        grep "$pkg" | sed "s/.*@//" || echo ""
 }
 
 #   helper function for installing NPM package
@@ -108,14 +108,14 @@ case "$1" in
             echo "++ gathering Claude Code change information"
             url="https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/CHANGELOG.md"
             prompt="Fetch the content from \"$url\", reduce to the top 5 sections, "
-            prompt="$prompt and use the following output <template> for formatting each section: "
-            prompt="$prompt <template>Version N.M.K:\\n- [...]\\n- [...]</template>. "
-            prompt="$prompt Do not output any further explanation beside these sections."
+            prompt+="and use the following output <template> for formatting each section: "
+            prompt+="<template>Version N.M.K:\\n- [...]\\n- [...]</template>. "
+            prompt+="Do not output any further explanation beside these sections."
             $claude -p "$prompt"
         fi
         ;;
 
-     * )
+    * )
         #   assemble non-standard context files from project
         context=()
         dir="$PWD"
@@ -131,6 +131,7 @@ case "$1" in
             dir=$(dirname "$dir" | sed -e 's;^/$;;')
         done
         if [[ ${#context[@]} -gt 0 ]]; then
+            mkdir -p "$HOME/.claude"
             cat "${context[@]}" > "$HOME/.claude/CLAUDE.md"
         else
             rm -f "$HOME/.claude/CLAUDE.md"
@@ -138,7 +139,7 @@ case "$1" in
 
         #   determine claude(1) command and pass-through execution
         if [[ -f "$HOME/.claude/prompt.md" ]]; then
-            prompt=$(cat "$HOME/.claude/prompt.md" | sed '/^$/d' | tr '\n' ' ')
+            prompt=$(sed '/^$/d' "$HOME/.claude/prompt.md" | tr '\n' ' ')
             set -- --append-system-prompt "$prompt" "$@"
         fi
         set -- "$claude" "$@"
