@@ -44,6 +44,10 @@ npm_install () {
     fi
     echo "++ installing NPM package: $pkg ($version_new)"
     $execute npm install --quiet --silent -y -g "$pkg@$version_new"
+    if [[ $? -ne 0 ]]; then
+        echo "$0: ERROR: failed to install NPM package: $pkg" 1>&2
+        exit 1
+    fi
 }
 
 #   helper function for updating NPM package
@@ -58,6 +62,10 @@ npm_update () {
     if [[ $version_old != $version_new ]]; then
         echo "++ updating NPM package: $pkg ($version_old -> $version_new)"
         $execute npm install --quiet --silent -y -g "$pkg@$version_new"
+        if [[ $? -ne 0 ]]; then
+            echo "$0: ERROR: failed to update NPM package: $pkg" 1>&2
+            exit 1
+        fi
     else
         echo "++ updating NPM package: $pkg ($version_old) -- still up-to-date"
     fi
@@ -77,6 +85,10 @@ case "$1" in
         #   tweak/patch claude(1)
         echo "++ patch Claude Code"
         $execute tweakcc -a
+        if [[ $? -ne 0 ]]; then
+            echo "$0: ERROR: failed to patch Claude Code" 1>&2
+            exit 1
+        fi
         ;;
 
     update )
@@ -95,6 +107,10 @@ case "$1" in
             echo "++ patch Claude Code"
             rm -f "$HOME/.tweakcc/cli.js.backup"
             $execute tweakcc -a
+            if [[ $? -ne 0 ]]; then
+                echo "$0: ERROR: failed to re-patch Claude Code" 1>&2
+                exit 1
+            fi
         fi
 
         #   show changelog (if Claude was changed)
