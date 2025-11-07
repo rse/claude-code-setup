@@ -12,15 +12,19 @@ for p in ${PATH//:/ }; do
         claudes+=("$p/claude")
     fi
 done
-claude=${claudes[1]}
-if [[ -z $claude ]]; then
+if [[ ${#claudes[@]} -lt 2 ]]; then
     echo "$0: ERROR: no real claude(1) found in \$PATH" 1>&2
     exit 1
 fi
+claude=${claudes[1]}
 
 #   determine whether running NPM requires user
 #   or root privileges, based on Node installation prefix
-npm_prefix=$(npm config get prefix)
+npm_prefix=$(npm config get prefix 2>/dev/null)
+if [[ -z "$npm_prefix" ]]; then
+    echo "$0: ERROR: npm is not available or not properly configured" 1>&2
+    exit 1
+fi
 if [[ -w "$npm_prefix" ]]; then
     execute=""
 else
@@ -149,7 +153,7 @@ case "$1" in
 
         #   determine claude(1) command and pass-through execution
         if [[ -f "$HOME/.claude/prompt.md" ]]; then
-            prompt=$(sed '/^$/d' "$HOME/.claude/prompt.md" | tr '\n' ' ')
+            prompt=$(sed '/^$/d' "$HOME/.claude/prompt.md" | tr '\n' ' ' | sed 's/ *$//')
             set -- --append-system-prompt "$prompt" "$@"
         fi
         set -- "$claude" "$@"
