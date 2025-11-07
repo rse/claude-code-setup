@@ -32,15 +32,15 @@ case "$0" in
             basedir=$(pwd)
         else
             #   no path
-            OIFS="$IFS"; IFS=":"
+            OLD_IFS="$IFS"; IFS=":"
             for p in $PATH; do
-                IFS="$OIFS"
+                IFS="$OLD_IFS"
                 if [[ -f "$p/$0" ]]; then
                     basedir="$p"
                     break
                 fi
             done
-            IFS="$OIFS"
+            IFS="$OLD_IFS"
         fi
         ;;
 esac
