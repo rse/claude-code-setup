@@ -5,18 +5,50 @@
 ##  Licensed under MIT <https://spdx.org/licenses/MIT>
 ##
 
+#   determine path of myself
+myself=""
+case "$0" in
+    /* )
+        #   via absolute path
+        myself="$0"
+        ;;
+    */* )
+        #   via relative path
+        myself=$(dirname "$0")
+        myself=$(cd "$myself" && pwd)
+        myself="$myself/claude"
+        ;;
+    * )
+        if [[ -f "$0" ]]; then
+            #   special case of local usage
+            myself="$0"
+        else
+            #   via path
+            OLD_IFS="$IFS"; IFS=":"
+            for p in $PATH; do
+                IFS="$OLD_IFS"
+                if [[ -f "$p/$0" ]]; then
+                    myself="$p/$0"
+                    break
+                fi
+            done
+            IFS="$OLD_IFS"
+        fi
+        ;;
+esac
+
 #   determine real claude(1) command
 claudes=()
 for p in ${PATH//:/ }; do
-    if [[ -x "$p/claude" ]]; then
+    if [[ -x "$p/claude" && "$p/claude" != "$mysef" ]]; then
         claudes+=("$p/claude")
     fi
 done
-if [[ ${#claudes[@]} -lt 2 ]]; then
+if [[ ${#claudes[@]} -lt 1 ]]; then
     echo "$0: ERROR: no real claude(1) found in \$PATH" 1>&2
     exit 1
 fi
-claude=${claudes[1]}
+claude=${claudes[0]}
 
 #   determine whether running NPM requires user
 #   or root privileges, based on Node installation prefix
