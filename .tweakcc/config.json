@@ -1,8 +1,8 @@
 {
-  "ccVersion": "2.0.30",
+  "ccVersion": "2.0.41",
   "ccInstallationDir": null,
-  "lastModified": "2025-10-31T21:53:39.404Z",
-  "changesApplied": true,
+  "lastModified": "2025-11-14T20:03:30.501Z",
+  "changesApplied": false,
   "settings": {
     "themes": [
       {
@@ -489,12 +489,6 @@
         "id": "RSE"
       }
     ],
-    "launchText": {
-      "method": "custom",
-      "figletText": "Claude Code",
-      "figletFont": "ANSI Shadow",
-      "customText": ""
-    },
     "thinkingVerbs": {
       "format": "{}… ",
       "verbs": [
@@ -763,6 +757,13 @@
         "foreground_color": "rgb(0,0,0)",
         "background_color": "rgb(0,0,0)"
       }
+    },
+    "toolsets": [],
+    "defaultToolset": null,
+    "misc": {
+      "showTweakccVersion": false,
+      "showPatchesApplied": false,
+      "expandThinkingBlocks": false
     }
   }
 }
