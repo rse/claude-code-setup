@@ -15,7 +15,7 @@
       {
         "id": "02ea58ac-c673-426a-bc7c-ee586a791306",
         "type": "context-percentage-usable",
-        "color": ""
+        "color": "black"
       },
       {
         "id": "4",
@@ -72,7 +72,7 @@
       {
         "id": "395a6a67-0022-4eb6-abca-3967561bfa16",
         "type": "git-changes",
-        "color": "",
+        "color": "black",
         "bold": false
       },
       {

@@ -46,7 +46,7 @@
     "command": "ccstatusline",
     "padding": 1
   },
-  "alwaysThinkingEnabled": false,
+  "alwaysThinkingEnabled": true,
   "defaultMode": "acceptEdits",
   "disableBypassPermissionsMode": "disable",
   "verbose": false
