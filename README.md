@@ -162,25 +162,25 @@ To setup **Claude Code**, just follow the following few steps:
        -e AI_CHAT_NAME="OpenAI ChatGPT" \
        -e AI_CHAT_MODEL="gpt-5" \
        -e AI_CHAT_BASE_URL="https://api.openai.com/v1" \
-       -- chat-openai-chatgpt any-chat-completions-mcp
+       -- chat-openai-chatgpt npx -y any-chat-completions-mcp
    claude mcp add --scope user --transport stdio \
        -e AI_CHAT_KEY="$CLAUDE_CODE_KEY_GOOGLE_GEMINI" \
        -e AI_CHAT_NAME="Google Gemini" \
        -e AI_CHAT_MODEL="gemini-2.5-flash" \
        -e AI_CHAT_BASE_URL="https://generativelanguage.googleapis.com/v1beta/openai/" \
-       -- chat-google-gemini any-chat-completions-mcp
+       -- chat-google-gemini npx -y any-chat-completions-mcp
    claude mcp add --scope user --transport stdio \
        -e AI_CHAT_KEY="$CLAUDE_CODE_KEY_DEEPSEEK" \
        -e AI_CHAT_NAME="DeepSeek" \
        -e AI_CHAT_MODEL="deepseek-chat" \
        -e AI_CHAT_BASE_URL="https://api.deepseek.com/v1" \
-       -- chat-google-gemini any-chat-completions-mcp
+       -- chat-google-gemini npx -y any-chat-completions-mcp
    claude mcp add --scope user --transport stdio \
        -e AI_CHAT_KEY="$CLAUDE_CODE_KEY_OPENROUTER" \
        -e AI_CHAT_NAME="xAI Grok" \
        -e AI_CHAT_MODEL="x-ai/grok-code-fast-1" \
        -e AI_CHAT_BASE_URL="https://openrouter.ai/api/v1" \
-       -- chat-xai-grok any-chat-completions-mcp
+       -- chat-xai-grok npx -y any-chat-completions-mcp
    ```
 
 5. [Optional] **SETUP GITHUB MCP**:
