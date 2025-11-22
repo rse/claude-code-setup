@@ -117,6 +117,7 @@ case "$1" in
         npm_install ccstatusline
         npm_install tweakcc
         npm_install @pyroprompts/any-chat-completions-mcp
+        npm_install @brave/brave-search-mcp-server
 
         #   tweak/patch claude(1)
         echo "++ patch Claude Code"

@@ -29,7 +29,8 @@
       "mcp__chat-xai-grok",
       "mcp__github",
       "mcp__ref",
-      "mcp__exa"
+      "mcp__exa",
+      "mcp__brave"
     ],
     "deny": [
       "Read(./.env)"

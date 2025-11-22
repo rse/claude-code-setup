@@ -124,8 +124,9 @@ To setup **Claude Code**, just follow the following few steps:
 
    Install [**Claude Code**](https://www.anthropic.com/claude-code) and
    the companion tools [TweakCC](https://github.com/Piebald-AI/tweakcc),
-   [CCStatusLine](https://github.com/sirmalloc/ccstatusline), and
-   [Any-Chat-Completions-MCP](https://github.com/pyroprompts/any-chat-completions-mcp)
+   [CCStatusLine](https://github.com/sirmalloc/ccstatusline),
+   [Any-Chat-Completions-MCP](https://github.com/pyroprompts/any-chat-completions-mcp),
+   and [Brave Search MCP](https://github.com/brave/brave-search-mcp-server)
    with the help of the `claude` wrapper:
 
    ```sh
@@ -183,7 +184,27 @@ To setup **Claude Code**, just follow the following few steps:
        -- chat-xai-grok npx -y any-chat-completions-mcp
    ```
 
-5. [Optional] **SETUP GITHUB MCP**:
+5. [Optional] **SETUP BRAVE SEARCH MCP**:
+
+   Optionally, and only for the custom `/brave` command:
+
+   Get a your [Brave Search Access Token](https://api-dashboard.search.brave.com/app/keys)
+   for API access and store it in a temporary environment variable:
+
+   ```
+   CLAUDE_CODE_KEY_BRAVE="..."
+   ```
+
+   Then add the corresponding MCP server (adds entry to `~/.claude.json`):
+
+   ```sh
+   claude mcp add --scope user --transport stdio \
+       -e BRAVE_API_KEY="$CLAUDE_CODE_KEY_BRAVE" \
+       -e BRAVE_MCP_ENABLED_TOOLS="brave_web_search" \
+       -- brave npx -y @brave/brave-search-mcp-server
+   ```
+
+6. [Optional] **SETUP GITHUB MCP**:
 
    Optionally, and only for the custom `/github` command:
 
@@ -202,7 +223,7 @@ To setup **Claude Code**, just follow the following few steps:
        -H "Authorization: Bearer $CLAUDE_CODE_KEY_GITHUB"
    ```
 
-6. [Optional] **SETUP REF AND EXA MCP**:
+7. [Optional] **SETUP REF AND EXA MCP**:
 
    Optionally, and only for the custom `/ref` and `/exa` commands:
 
@@ -223,7 +244,7 @@ To setup **Claude Code**, just follow the following few steps:
        -- ref "https://api.ref.tools/mcp?apiKey=$CLAUDE_CODE_KEY_REF"
    ```
 
-7. **GET ACCESS TO CLAUDE CODE**:
+8. **GET ACCESS TO CLAUDE CODE**:
 
    Access to **Claude Code**: Here you have two options:
 
@@ -240,7 +261,7 @@ To setup **Claude Code**, just follow the following few steps:
    > and is more cost effective. The second option is more versatile, as you
    > can use this subscription for more than just **Claude Code**.
 
-8. **LOGIN TO CLAUDE CODE**:
+9. **LOGIN TO CLAUDE CODE**:
 
    Login to [**Claude Code**](https://www.anthropic.com/claude-code):
 

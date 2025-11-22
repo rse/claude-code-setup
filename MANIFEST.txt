@@ -35,6 +35,7 @@ FILE .claude/commands/github.md
 FILE .claude/commands/exa.md
 FILE .claude/commands/ref.md
 FILE .claude/commands/suck.md
+FILE .claude/commands/brave.md
 DIR  .config
 DIR  .config/ccstatusline
 FILE .config/ccstatusline/settings.json
