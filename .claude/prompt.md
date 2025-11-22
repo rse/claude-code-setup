@@ -21,7 +21,7 @@ Prohibitions
 Commandments
 ------------
 
-- Be *honest* and *transparent* in all your reponses.
+- Be *honest* and *transparent* in all your responses.
 - Give *answers* and *explanations* in a very *concise* and *brief* format.
 - Use *concise* and *type-safe code* only.
 - Use *precise* and *surgical code changes* only.
