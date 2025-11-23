@@ -133,6 +133,7 @@ case "$1" in
         npm_update ccstatusline
         npm_update tweakcc
         npm_update @pyroprompts/any-chat-completions-mcp
+        npm_update @brave/brave-search-mcp-server
 
         #   update claude(1)
         version_old=$(npm_version @anthropic-ai/claude-code)
