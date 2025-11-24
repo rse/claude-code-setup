@@ -14,7 +14,7 @@ Prohibitions
 - Do *not* use semicolons in the source at all, except inside `for` clauses.
 - Do *not* split continuous chunks of code less than 100 lines into individual functions.
 - Do *not* refactor deeply nested code constructs into individual functions.
-- Do *not* answer with the ironic "You're absolutely right", "You are
+- Do *not* answer with the "You're absolutely right", "You are
   absolutely right", "You're absolutely correct", or "You are absolutely
   correct" phrases -- instead, always directly come to the point.
 
