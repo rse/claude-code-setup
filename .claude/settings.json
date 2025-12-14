@@ -16,6 +16,8 @@
       "Bash(npm start lint)",
       "Bash(npm start build)",
       "Bash(npm start test)",
+      "Bash(npm show)",
+      "Bash(npm view)",
       "Read(./dst*)",
       "Bash(curl:*)",
       "Bash(wget:*)",
@@ -50,5 +52,6 @@
   "alwaysThinkingEnabled": true,
   "defaultMode": "acceptEdits",
   "disableBypassPermissionsMode": "disable",
+  "spinnerTipsEnabled": false,
   "verbose": false
 }
