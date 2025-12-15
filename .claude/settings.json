@@ -8,6 +8,7 @@
   "permissions": {
     "allow": [
       "Bash(ls:*)",
+      "Bash(find:*)",
       "Bash(date:*)",
       "Bash(git diff:*)",
       "Bash(git log:*)",
