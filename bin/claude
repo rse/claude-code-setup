@@ -154,6 +154,12 @@ case "$1" in
         fi
         ;;
 
+    usage )
+        #   show token usage and costs of current month
+        since=$(date '+%Y%m01')
+        ccusage monthly -s $since -m calculate -b
+        ;;
+
     * )
         #   assemble non-standard context files from project
         context=()
