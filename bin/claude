@@ -150,17 +150,6 @@ case "$1" in
                 exit 1
             fi
         fi
-
-        #   show changelog (if Claude was changed)
-        if [[ $version_old != $version_new ]]; then
-            echo "++ gathering Claude Code change information"
-            url="https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/CHANGELOG.md"
-            prompt="Fetch the content from \"$url\", reduce to the top 5 sections, "
-            prompt+="and use the following output <template> for formatting each section: "
-            prompt+="<template>Version N.M.K:\\n- [...]\\n- [...]</template>. "
-            prompt+="Do not output any further explanation beside these sections."
-            $claude -p "$prompt"
-        fi
         ;;
 
     * )
