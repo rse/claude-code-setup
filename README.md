@@ -125,6 +125,7 @@ To setup **Claude Code**, just follow the following few steps:
    Install [**Claude Code**](https://www.anthropic.com/claude-code) and
    the companion tools [TweakCC](https://github.com/Piebald-AI/tweakcc),
    [CCStatusLine](https://github.com/sirmalloc/ccstatusline),
+   [CCUsage](https://github.com/ryoppippi/ccusage),
    [Any-Chat-Completions-MCP](https://github.com/pyroprompts/any-chat-completions-mcp),
    and [Brave Search MCP](https://github.com/brave/brave-search-mcp-server)
    with the help of the `claude` wrapper:

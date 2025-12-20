@@ -115,6 +115,7 @@ case "$1" in
 
         #   install companion tools
         npm_install ccstatusline
+        npm_install ccusage
         npm_install tweakcc
         npm_install @pyroprompts/any-chat-completions-mcp
         npm_install @brave/brave-search-mcp-server
@@ -131,6 +132,7 @@ case "$1" in
     update )
         #   update companion tools
         npm_update ccstatusline
+        npm_update ccusage
         npm_update tweakcc
         npm_update @pyroprompts/any-chat-completions-mcp
         npm_update @brave/brave-search-mcp-server
