@@ -40,7 +40,7 @@ esac
 #   determine real claude(1) command
 claudes=()
 for p in ${PATH//:/ }; do
-    if [[ -x "$p/claude" && "$p/claude" != "$mysef" ]]; then
+    if [[ -x "$p/claude" && "$p/claude" != "$myself" ]]; then
         claudes+=("$p/claude")
     fi
 done
