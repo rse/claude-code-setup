@@ -183,7 +183,14 @@ in the given chronological order:
     logic.
     </task>
 
-20. <task id="SUMMARY">
+20. <task id="A19 - FLOW">
+    Check for wrong control or data flow.
+
+    Especially, try to detect control flows where corner cases are not covered,
+    and data flows with inconsistent value unit processing.
+    </task>
+
+21. <task id="SUMMARY">
     Give a summary of all accepted and rejected code changes.
     </task>
 </plan>
