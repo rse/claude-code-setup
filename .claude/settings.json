@@ -17,6 +17,7 @@
       "Bash(npm start lint)",
       "Bash(npm start build)",
       "Bash(npm start test)",
+      "Bash(npm test)",
       "Bash(npm show)",
       "Bash(npm view)",
       "Read(./dst*)",
