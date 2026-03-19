@@ -190,7 +190,14 @@ in the given chronological order:
     and data flows with inconsistent value unit processing.
     </task>
 
-21. <task id="SUMMARY">
+21. <task id="A20 - DEAD-CODE">
+    Check for dead or unused code.
+
+    Especially, try to detect classes, functions or control flow
+    branches which are effectively dead or unused.
+    </task>
+
+22. <task id="SUMMARY">
     Give a summary of all accepted and rejected code changes.
     </task>
 </plan>
